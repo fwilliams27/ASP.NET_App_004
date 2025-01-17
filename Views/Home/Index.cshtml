@@ -1,0 +1,39 @@
+﻿@{ 
+    ViewData["Title"] = "Home Page";
+}
+
+<style>
+    body {
+        background-color: rgb(217, 202, 202); /* Set background color */
+        font-family: "Cambria", Cursive, sans-serif; /* Set a cursive font */
+        overflow-y: scroll; /* Ensure a scroll bar */
+    }
+
+    h1, h2, h3, p, a {
+        color: rgb(39, 13, 13); /* Set default text color */
+    }
+
+    h3 span {
+        font-weight: bold; /* Make "Red Pill" and "Blue Pill" bold */
+    }
+
+    a {
+        color: rgb(13, 69, 93); /* Style the link */
+        text-decoration: none; /* Remove underline */
+    }
+
+    a:hover {
+        text-decoration: underline; /* Add underline on hover */
+    }
+</style>
+
+<div class="text-center">
+    <h1 class="display-4">Welcome to My World</h1> <!-- This will be the new title for the site. -->
+    <h2> It is all a Simulation </h2> <!-- This is one of the mindbenders that I have added to intrigue the reader along with a different font. -->
+    <h3>@Html.Raw(ViewData["mydata"])</h3> 
+    <p>Reach me here <a href="https://mindoverload.com/aspnet/core">for more MATRIX Control solutions</a>.</p> <!-- Currently the link has no true page but soon will. -->
+</div>
+
+<p class="text-center">
+    <h3 class="display-8">Williams FH</h3> <!-- The Author's name. -->
+</p>
