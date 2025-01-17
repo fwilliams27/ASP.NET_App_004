@@ -43,7 +43,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 13 Jan 2025 18:00:50 GMT"
+          "Value": "Fri, 17 Jan 2025 19:48:03 GMT"
         },
         {
           "Name": "Vary",
@@ -92,7 +92,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 13 Jan 2025 18:00:50 GMT"
+          "Value": "Fri, 17 Jan 2025 19:48:03 GMT"
         }
       ],
       "EndpointProperties": [
@@ -141,7 +141,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 13 Jan 2025 18:00:50 GMT"
+          "Value": "Fri, 17 Jan 2025 19:48:03 GMT"
         },
         {
           "Name": "Vary",
@@ -204,7 +204,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 13 Jan 2025 18:00:50 GMT"
+          "Value": "Fri, 17 Jan 2025 19:48:03 GMT"
         },
         {
           "Name": "Vary",
@@ -245,7 +245,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 13 Jan 2025 18:00:50 GMT"
+          "Value": "Fri, 17 Jan 2025 19:48:03 GMT"
         }
       ],
       "EndpointProperties": [
@@ -286,7 +286,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 13 Jan 2025 18:00:50 GMT"
+          "Value": "Fri, 17 Jan 2025 19:48:03 GMT"
         },
         {
           "Name": "Vary",
@@ -297,88 +297,6 @@
         {
           "Name": "integrity",
           "Value": "sha256-RiFFEk5R/ghRr50/p2Jw6VJFzKFt/ZrRpAIglhrY1SQ="
-        }
-      ]
-    },
-    {
-      "Route": "Models/Product.cs",
-      "AssetFile": "Models/Product.cs",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "517"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/octet-stream"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"PZ7dT4siPfsaKcp349prC74MevZcgXvA8FZwoybhQXQ=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 17 Jan 2025 17:24:34 GMT"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-PZ7dT4siPfsaKcp349prC74MevZcgXvA8FZwoybhQXQ="
-        }
-      ]
-    },
-    {
-      "Route": "Models/Product.doliwkv2oo.cs",
-      "AssetFile": "Models/Product.cs",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "517"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/octet-stream"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"PZ7dT4siPfsaKcp349prC74MevZcgXvA8FZwoybhQXQ=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 17 Jan 2025 17:24:34 GMT"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "doliwkv2oo"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-PZ7dT4siPfsaKcp349prC74MevZcgXvA8FZwoybhQXQ="
-        },
-        {
-          "Name": "label",
-          "Value": "Models/Product.cs"
         }
       ]
     },
@@ -721,7 +639,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 17 Jan 2025 17:16:53 GMT"
+          "Value": "Fri, 17 Jan 2025 17:40:10 GMT"
         },
         {
           "Name": "Vary",
@@ -770,7 +688,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 17 Jan 2025 17:16:53 GMT"
+          "Value": "Fri, 17 Jan 2025 17:40:10 GMT"
         }
       ],
       "EndpointProperties": [
@@ -819,7 +737,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 17 Jan 2025 17:16:53 GMT"
+          "Value": "Fri, 17 Jan 2025 17:40:10 GMT"
         },
         {
           "Name": "Vary",
@@ -882,7 +800,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 17 Jan 2025 17:16:53 GMT"
+          "Value": "Fri, 17 Jan 2025 17:40:10 GMT"
         },
         {
           "Name": "Vary",
@@ -923,7 +841,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 17 Jan 2025 17:16:53 GMT"
+          "Value": "Fri, 17 Jan 2025 17:40:10 GMT"
         }
       ],
       "EndpointProperties": [
@@ -964,7 +882,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 17 Jan 2025 17:16:53 GMT"
+          "Value": "Fri, 17 Jan 2025 17:40:10 GMT"
         },
         {
           "Name": "Vary",

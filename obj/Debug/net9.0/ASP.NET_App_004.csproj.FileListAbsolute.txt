@@ -14,10 +14,12 @@
 /Users/fredwilliams/ASP.NET_App_004/obj/Debug/net9.0/ASP.NET_App_004.MvcApplicationPartsAssemblyInfo.cache
 /Users/fredwilliams/ASP.NET_App_004/obj/Debug/net9.0/ASP.NET_App_004.RazorAssemblyInfo.cache
 /Users/fredwilliams/ASP.NET_App_004/obj/Debug/net9.0/ASP.NET_App_004.RazorAssemblyInfo.cs
+/Users/fredwilliams/ASP.NET_App_004/obj/Debug/net9.0/ASP.NET_App_004.sourcelink.json
 /Users/fredwilliams/ASP.NET_App_004/obj/Debug/net9.0/scopedcss/Views/Shared/_Layout.cshtml.rz.scp.css
 /Users/fredwilliams/ASP.NET_App_004/obj/Debug/net9.0/scopedcss/bundle/ASP.NET_App_004.styles.css
 /Users/fredwilliams/ASP.NET_App_004/obj/Debug/net9.0/scopedcss/projectbundle/ASP.NET_App_004.bundle.scp.css
 /Users/fredwilliams/ASP.NET_App_004/obj/Debug/net9.0/compressed/ho22wa2e4y-b9sayid5wm.gz
+/Users/fredwilliams/ASP.NET_App_004/obj/Debug/net9.0/compressed/b1qx8ydu5o-bjvoh7r02s.gz
 /Users/fredwilliams/ASP.NET_App_004/obj/Debug/net9.0/compressed/b439odw4s7-61n19gt1b8.gz
 /Users/fredwilliams/ASP.NET_App_004/obj/Debug/net9.0/compressed/kw7xqq67lg-xtxxf3hu2r.gz
 /Users/fredwilliams/ASP.NET_App_004/obj/Debug/net9.0/compressed/mhpjlj9sbf-bqjiyaj88i.gz
@@ -95,4 +97,3 @@
 /Users/fredwilliams/ASP.NET_App_004/obj/Debug/net9.0/ASP.NET_App_004.pdb
 /Users/fredwilliams/ASP.NET_App_004/obj/Debug/net9.0/ASP.NET_App_004.genruntimeconfig.cache
 /Users/fredwilliams/ASP.NET_App_004/obj/Debug/net9.0/ref/ASP.NET_App_004.dll
-/Users/fredwilliams/ASP.NET_App_004/obj/Debug/net9.0/compressed/b1qx8ydu5o-bjvoh7r02s.gz

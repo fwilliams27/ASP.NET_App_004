@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "A0RMd3wtYUdYFG2sTWyhLQ68F4yV7wsgYDELE7qKCYA=",
+  "Hash": "LwnDe9PgySz6OmI2fN12pPIzmXsKGL0XnifIc0uR5mw=",
   "Source": "ASP.NET_App_004",
   "BasePath": "_content/ASP.NET_App_004",
   "Mode": "Default",
@@ -2766,27 +2766,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/lib/jquery/LICENSE.txt"
-    },
-    {
-      "Identity": "/Users/fredwilliams/ASP.NET_App_004/wwwroot/Models/Product.cs",
-      "SourceId": "ASP.NET_App_004",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/fredwilliams/ASP.NET_App_004/wwwroot/",
-      "BasePath": "_content/ASP.NET_App_004",
-      "RelativePath": "Models/Product#[.{fingerprint}]?.cs",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "doliwkv2oo",
-      "Integrity": "PZ7dT4siPfsaKcp349prC74MevZcgXvA8FZwoybhQXQ=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/Models/Product.cs"
     }
   ],
   "Endpoints": [
@@ -2815,7 +2794,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 13 Jan 2025 18:00:50 GMT"
+          "Value": "Fri, 17 Jan 2025 19:48:03 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2876,7 +2855,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 13 Jan 2025 18:00:50 GMT"
+          "Value": "Fri, 17 Jan 2025 19:48:03 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2921,7 +2900,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 13 Jan 2025 18:00:50 GMT"
+          "Value": "Fri, 17 Jan 2025 19:48:03 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2976,7 +2955,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 13 Jan 2025 18:00:50 GMT"
+          "Value": "Fri, 17 Jan 2025 19:48:03 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3037,7 +3016,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 13 Jan 2025 18:00:50 GMT"
+          "Value": "Fri, 17 Jan 2025 19:48:03 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3082,7 +3061,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 13 Jan 2025 18:00:50 GMT"
+          "Value": "Fri, 17 Jan 2025 19:48:03 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3137,7 +3116,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 13 Jan 2025 18:00:50 GMT"
+          "Value": "Fri, 17 Jan 2025 19:48:03 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3190,7 +3169,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 13 Jan 2025 18:00:50 GMT"
+          "Value": "Fri, 17 Jan 2025 19:48:03 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3227,7 +3206,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 13 Jan 2025 18:00:50 GMT"
+          "Value": "Fri, 17 Jan 2025 19:48:03 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3274,7 +3253,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 13 Jan 2025 18:00:50 GMT"
+          "Value": "Fri, 17 Jan 2025 19:48:03 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3327,7 +3306,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 13 Jan 2025 18:00:50 GMT"
+          "Value": "Fri, 17 Jan 2025 19:48:03 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3364,7 +3343,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 13 Jan 2025 18:00:50 GMT"
+          "Value": "Fri, 17 Jan 2025 19:48:03 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3709,7 +3688,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 17 Jan 2025 17:16:53 GMT"
+          "Value": "Fri, 17 Jan 2025 17:40:10 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3770,7 +3749,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 17 Jan 2025 17:16:53 GMT"
+          "Value": "Fri, 17 Jan 2025 17:40:10 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3815,7 +3794,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 17 Jan 2025 17:16:53 GMT"
+          "Value": "Fri, 17 Jan 2025 17:40:10 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3870,7 +3849,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 17 Jan 2025 17:16:53 GMT"
+          "Value": "Fri, 17 Jan 2025 17:40:10 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3923,7 +3902,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 17 Jan 2025 17:16:53 GMT"
+          "Value": "Fri, 17 Jan 2025 17:40:10 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3960,7 +3939,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 17 Jan 2025 17:16:53 GMT"
+          "Value": "Fri, 17 Jan 2025 17:40:10 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -22239,88 +22218,6 @@
         {
           "Name": "integrity",
           "Value": "sha256-F1wMlgb/juW08DFUssW6Pm9EBKfjXXRiSK0F5FgXxJU="
-        }
-      ]
-    },
-    {
-      "Route": "Models/Product.cs",
-      "AssetFile": "/Users/fredwilliams/ASP.NET_App_004/wwwroot/Models/Product.cs",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "517"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/octet-stream"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"PZ7dT4siPfsaKcp349prC74MevZcgXvA8FZwoybhQXQ=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 17 Jan 2025 17:24:34 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-PZ7dT4siPfsaKcp349prC74MevZcgXvA8FZwoybhQXQ="
-        }
-      ]
-    },
-    {
-      "Route": "Models/Product.doliwkv2oo.cs",
-      "AssetFile": "/Users/fredwilliams/ASP.NET_App_004/wwwroot/Models/Product.cs",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "517"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/octet-stream"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"PZ7dT4siPfsaKcp349prC74MevZcgXvA8FZwoybhQXQ=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 17 Jan 2025 17:24:34 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "doliwkv2oo"
-        },
-        {
-          "Name": "label",
-          "Value": "Models/Product.cs"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-PZ7dT4siPfsaKcp349prC74MevZcgXvA8FZwoybhQXQ="
         }
       ]
     }

@@ -1,0 +1,24 @@
+@model IEnumerable<ASP.NET_App_004.Models.Product>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Products</title>
+</head>
+<body>
+    <h1>Products</h1>
+    <ul>
+        @foreach (var product in Model)
+        {
+            <li>
+                <h2>@product.Title</h2>
+                <img src="@product.Image" alt="@product.Title" style="width:150px;height:auto;">
+                <p>@product.Description</p>
+                <p><strong>Maker:</strong> @product.Maker</p>
+                <p><strong>URL:</strong> <a href="@product.Url">@product.Url</a></p>
+                <p><strong>Ratings:</strong> @string.Join(", ", product.Ratings ?? new int[0])</p>
+            </li>
+        }
+    </ul>
+</body>
+</html>
