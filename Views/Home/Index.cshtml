@@ -1,4 +1,5 @@
-﻿@{ 
+﻿@model IEnumerable<ASP.NET_App_004.Models.Product>  
+@{ 
     ViewData["Title"] = "Home Page";
 }
 
@@ -25,13 +26,48 @@
     a:hover {
         text-decoration: underline; /* Add underline on hover */
     }
+
+    .card-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .card {
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        width: 300px;
+        padding: 15px;
+        text-align: center;
+        background-color: #fff;
+    }
+
+    .card img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 5px;
+    }
 </style>
 
 <div class="text-center">
     <h1 class="display-4">Welcome to My World</h1> <!-- This will be the new title for the site. -->
     <h2> It is all a Simulation </h2> <!-- This is one of the mindbenders that I have added to intrigue the reader along with a different font. -->
     <h3>@Html.Raw(ViewData["mydata"])</h3> 
-    <p>Reach me here <a href="https://mindoverload.com/aspnet/core">for more MATRIX Control solutions</a>.</p> <!-- Currently the link has no true page but soon will. -->
+    <p>Reach me here <a href="https://mindoverload.com/aspnet/core">For more MATRIX Control solutions</a>.</p> <!-- Currently the link has no true page but soon will. -->
+</div>
+
+<div class="card-container">
+    @foreach (var product in Model)
+    {
+        <div class="card">
+            <img src="@product.Image" alt="@product.Title">
+            <h2>@product.Title</h2>
+            <p>@product.Description</p>
+            <a href="@product.Url">Learn more</a>
+        </div>
+    }
 </div>
 
 <p class="text-center">

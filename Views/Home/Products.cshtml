@@ -4,21 +4,63 @@
 <html>
 <head>
     <title>Products</title>
+    <style>
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .card {
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            padding: 15px;
+            text-align: center;
+            background-color: #fff;
+        }
+
+        .card img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .card h2 {
+            font-size: 1.5rem;
+            margin: 10px 0;
+        }
+
+        .card p {
+            font-size: 1rem;
+            color: #333;
+        }
+
+        .card a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        .card a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-    <h1>Products</h1>
-    <ul>
+    <h1 class="text-center">Products</h1>
+    <div class="card-container">
         @foreach (var product in Model)
         {
-            <li>
+            <div class="card">
+                <img src="@product.Image" alt="@product.Title">
                 <h2>@product.Title</h2>
-                <img src="@product.Image" alt="@product.Title" style="width:150px;height:auto;">
                 <p>@product.Description</p>
                 <p><strong>Maker:</strong> @product.Maker</p>
-                <p><strong>URL:</strong> <a href="@product.Url">@product.Url</a></p>
-                <p><strong>Ratings:</strong> @string.Join(", ", product.Ratings ?? new int[0])</p>
-            </li>
+                <a href="@product.Url">Learn more</a>
+            </div>
         }
-    </ul>
+    </div>
 </body>
 </html>

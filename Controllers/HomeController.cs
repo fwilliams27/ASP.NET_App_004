@@ -8,24 +8,24 @@ namespace ASP.NET_App_004.Controllers;
 public class HomeController : Controller
 {
     private readonly ILogger<HomeController> _logger;
-    private readonly JsonFileProductService _productService;
+    public JsonFileProductService _productService;
+    public IEnumerable<Product> Products { get; private set; }
 
     public HomeController(ILogger<HomeController> logger, JsonFileProductService productService)
     {
         _logger = logger;
         _productService = productService;
+        Products = new List<Product>(); // Initialize with an empty list or fetch products from the service
     }
 
     public IActionResult Index()
     {
+        // Fetch products using the JsonFileProductService
+        Products = _productService.GetProducts();
+        
+        // Pass products to the view
         ViewData["mydata"] = "You choose, Red Pill or Blue Pill";
-        return View();
-    }
-
-    public IActionResult Products()
-    {
-        var products = _productService.GetProducts();
-        return View(products);
+        return View(Products);
     }
 
     public IActionResult Privacy()
