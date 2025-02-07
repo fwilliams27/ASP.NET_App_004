@@ -9,10 +9,6 @@
       "PackagePath": "staticwebassets/css/site.css"
     },
     {
-      "Id": "/Users/fredwilliams/ASP.NET_App_004/wwwroot/data/products.json",
-      "PackagePath": "staticwebassets/data/products.json"
-    },
-    {
       "Id": "/Users/fredwilliams/ASP.NET_App_004/wwwroot/favicon.ico",
       "PackagePath": "staticwebassets/favicon.ico"
     },
@@ -259,6 +255,10 @@
     {
       "Id": "/Users/fredwilliams/ASP.NET_App_004/wwwroot/lib/jquery/dist/jquery.slim.min.map",
       "PackagePath": "staticwebassets/lib/jquery/dist/jquery.slim.min.map"
+    },
+    {
+      "Id": "/Users/fredwilliams/ASP.NET_App_004/wwwroot/products.json",
+      "PackagePath": "staticwebassets/products.json"
     },
     {
       "Id": "obj/Debug/net9.0/staticwebassets/msbuild.ASP.NET_App_004.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",

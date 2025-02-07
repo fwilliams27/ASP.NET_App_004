@@ -1,11 +1,16 @@
 using ASP.NET_App_004.Services;
+using System.Text.Json;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddRazorPages(); 
+builder.Services.AddRazorPages();
 builder.Services.AddControllersWithViews();
-builder.Services.AddTransient<JsonFileProductService>();// This was added to ensure that my JsonFileProductService is added a service.
+builder.Services.AddTransient<JsonFileProductService>(); // Registering JsonFileProductService
 
 var app = builder.Build();
 
@@ -18,13 +23,22 @@ if (!app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
-
 app.UseRouting();
-
 app.UseAuthorization();
 
+// Map Razor Pages and Controllers
+app.MapRazorPages();
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    pattern: "{controller=Home}/{action=Index}/{id?}"
+);
+
+// Adding MapGet for "/products" endpoint
+app.MapGet("/products", (HttpContext context, JsonFileProductService productService) =>
+{
+    var products = productService.GetProducts();
+    var json = JsonSerializer.Serialize(products);
+    return context.Response.WriteAsync(json);
+});
 
 app.Run();
