@@ -96,4 +96,4 @@
 /Users/fredwilliams/ASP.NET_App_004/obj/Debug/net9.0/ASP.NET_App_004.genruntimeconfig.cache
 /Users/fredwilliams/ASP.NET_App_004/obj/Debug/net9.0/ref/ASP.NET_App_004.dll
 /Users/fredwilliams/ASP.NET_App_004/obj/Debug/net9.0/compressed/ho22wa2e4y-njfhh264tf.gz
-/Users/fredwilliams/ASP.NET_App_004/obj/Debug/net9.0/compressed/0q6v1fjo7g-0d8c9rjocq.gz
+/Users/fredwilliams/ASP.NET_App_004/obj/Debug/net9.0/compressed/0q6v1fjo7g-w6w7a0huch.gz

@@ -1,5 +1,6 @@
 using ASP.NET_App_004.Services;
 using System.Text.Json;
+using ASP.NET_App_004.Components;   // Importing the Blazor component
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.DependencyInjection;
@@ -11,7 +12,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorPages();
 builder.Services.AddControllersWithViews();
 builder.Services.AddTransient<JsonFileProductService>(); // Registering JsonFileProductService
-
+builder.Services.AddServerSideBlazor(); // Registering Blazor
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -28,6 +29,7 @@ app.UseAuthorization();
 
 // Map Razor Pages and Controllers
 app.MapRazorPages();
+app.MapBlazorHub();
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}"

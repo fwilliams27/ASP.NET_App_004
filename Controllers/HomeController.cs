@@ -1,11 +1,13 @@
-using System.Diagnostics; 
+using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using ASP.NET_App_004.Models;
 using ASP.NET_App_004.Services;
 
 namespace ASP.NET_App_004.Controllers;
 
-[Route("[controller]")]
+// Ensures this controller is used for the root path "/"
+[Route("")]
+[Route("Home")]
 public class HomeController : Controller
 {
     private readonly ILogger<HomeController> _logger;
@@ -17,7 +19,8 @@ public class HomeController : Controller
         _productService = productService;
     }
 
-    [HttpGet]
+    [HttpGet("")]
+    [HttpGet("Index")]
     public IActionResult Index()
     {
         var products = _productService.GetProducts();
@@ -49,4 +52,4 @@ public class HomeController : Controller
     {
         return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
     }
-}  
+}

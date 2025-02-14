@@ -1164,8 +1164,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>0d8c9rjocq</Fingerprint>
-      <Integrity>rCWZATG/7mX0vIZa/89G3SnDLH81iG3NdTqTo/XHZRU=</Integrity>
+      <Fingerprint>w6w7a0huch</Fingerprint>
+      <Integrity>uHhRSVkvhA0xkV5TusCKetFHqlj+p4DvsyVjcmfhHjs=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\products.json'))</OriginalItemSpec>
