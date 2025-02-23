@@ -1,36 +1,98 @@
 @using Microsoft.AspNetCore.Components.Web
 @using ASP.NET_App_004.Models
 @using ASP.NET_App_004.Services
+@using Microsoft.JSInterop
 @inject JsonFileProductService ProductService
+@inject IJSRuntime Js
 
 <div class="card-container">
     @foreach (var product in ProductService.GetProducts())
     {
         <div class="card">
-            <img src="@product.Image" alt="@product.Title">
-            <h2>@product.Title</h2>
-            <p>@product.Description</p>
-            <a href="@product.Url">Learn more</a>
-
-        <div class="card-footer">
-            <small class="text-muted">
-                <button @onclick="(e) => SelectProduct(product.Id)"
-                        data-toggle="modal"
-                        data-target="#productModal"
-                        class="btn btn-primary">More Info</button>
+            <div class="card-img" style="background-image: url('@product.Image'); height: 200px; background-size: cover; background-position: center;">
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">@product.Title</h5>
+                <p class="card-text">@product.Description</p>
+                <a href="@product.Url">Learn more</a>
+            </div>
+            <div class="card-footer">
+                <small class="text-muted">
+                    <button @onclick="() => SelectProduct(product.Id)"
+                            class="btn btn-primary">
+                        More Info
+                    </button>
                 </small>
             </div>
         </div>
     }
 </div>
 
-@code {
-    Product? selectProduct;
-    string selectProductId = string.Empty; 
+<!-- ✅ Always Keep the Modal in the DOM -->
+<div class="modal fade" id="productModal" tabindex="-1" role="dialog" aria-labelledby="productTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="productTitle">@selectedProduct?.Title</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" @onclick="CloseModal"></button>
+            </div>
+            <div class="modal-body text-center">
+                @if (selectedProduct != null)
+                {
+                    <img src="@selectedProduct.Image" class="img-fluid" alt="@selectedProduct.Title">
+                    <p class="mt-3">@selectedProduct.Description</p>
+                }
+                else
+                {
+                    <p>No product selected.</p>
+                }
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" @onclick="CloseModal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
 
-    void SelectProduct(string productId)
+@code {
+    private Product? selectedProduct;
+    private string selectedProductId = string.Empty;
+
+    private async Task SelectProduct(string productId)
     {
-        selectProductId = productId;
-        selectProduct = ProductService.GetProducts().FirstOrDefault(x => x.Id == productId);
+        Console.WriteLine($"Selecting product: {productId}");
+
+        // Find the selected product
+        selectedProductId = productId;
+        selectedProduct = ProductService.GetProducts().FirstOrDefault(x => x.Id == productId);
+
+        if (selectedProduct != null)
+        {
+            Console.WriteLine($"Product found: {selectedProduct.Title}");
+            Console.WriteLine($"Image URL: {selectedProduct.Image}");
+
+            // Show the modal using Bootstrap's JavaScript via interop
+            await Js.InvokeVoidAsync("showBootstrapModal", "#productModal");
+        }
+        else
+        {
+            Console.Error.WriteLine("Product not found!");
+        }
+    }
+
+    private async Task CloseModal()
+    {
+        selectedProduct = null;
+        // Hide the modal using Bootstrap's JavaScript via interop
+        await Js.InvokeVoidAsync("hideBootstrapModal", "#productModal");
+    }
+
+    // Ensure JavaScript functions are available
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            await Js.InvokeVoidAsync("initializeBootstrapModals");
+        }
     }
 }

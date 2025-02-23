@@ -18,8 +18,9 @@
 /Users/fredwilliams/ASP.NET_App_004/obj/Debug/net9.0/scopedcss/Views/Shared/_Layout.cshtml.rz.scp.css
 /Users/fredwilliams/ASP.NET_App_004/obj/Debug/net9.0/scopedcss/bundle/ASP.NET_App_004.styles.css
 /Users/fredwilliams/ASP.NET_App_004/obj/Debug/net9.0/scopedcss/projectbundle/ASP.NET_App_004.bundle.scp.css
+/Users/fredwilliams/ASP.NET_App_004/obj/Debug/net9.0/compressed/ho22wa2e4y-njfhh264tf.gz
 /Users/fredwilliams/ASP.NET_App_004/obj/Debug/net9.0/compressed/b439odw4s7-61n19gt1b8.gz
-/Users/fredwilliams/ASP.NET_App_004/obj/Debug/net9.0/compressed/kw7xqq67lg-xtxxf3hu2r.gz
+/Users/fredwilliams/ASP.NET_App_004/obj/Debug/net9.0/compressed/kw7xqq67lg-9b8t2rx7aa.gz
 /Users/fredwilliams/ASP.NET_App_004/obj/Debug/net9.0/compressed/mhpjlj9sbf-bqjiyaj88i.gz
 /Users/fredwilliams/ASP.NET_App_004/obj/Debug/net9.0/compressed/eiy1xw9q51-c2jlpeoesf.gz
 /Users/fredwilliams/ASP.NET_App_004/obj/Debug/net9.0/compressed/apewmiiqvr-erw9l3u2r3.gz
@@ -79,6 +80,7 @@
 /Users/fredwilliams/ASP.NET_App_004/obj/Debug/net9.0/compressed/ef0pa0uegg-muycvpuwrr.gz
 /Users/fredwilliams/ASP.NET_App_004/obj/Debug/net9.0/compressed/98fnerloph-87fc7y1x7t.gz
 /Users/fredwilliams/ASP.NET_App_004/obj/Debug/net9.0/compressed/mv0gheoqij-mlv21k5csn.gz
+/Users/fredwilliams/ASP.NET_App_004/obj/Debug/net9.0/compressed/0q6v1fjo7g-u0ifp9gp5n.gz
 /Users/fredwilliams/ASP.NET_App_004/obj/Debug/net9.0/compressed/4vaaoryz2i-69kh2lugfr.gz
 /Users/fredwilliams/ASP.NET_App_004/obj/Debug/net9.0/compressed/gj5l4rpn52-69kh2lugfr.gz
 /Users/fredwilliams/ASP.NET_App_004/obj/Debug/net9.0/staticwebassets.build.json
@@ -95,5 +97,3 @@
 /Users/fredwilliams/ASP.NET_App_004/obj/Debug/net9.0/ASP.NET_App_004.pdb
 /Users/fredwilliams/ASP.NET_App_004/obj/Debug/net9.0/ASP.NET_App_004.genruntimeconfig.cache
 /Users/fredwilliams/ASP.NET_App_004/obj/Debug/net9.0/ref/ASP.NET_App_004.dll
-/Users/fredwilliams/ASP.NET_App_004/obj/Debug/net9.0/compressed/ho22wa2e4y-njfhh264tf.gz
-/Users/fredwilliams/ASP.NET_App_004/obj/Debug/net9.0/compressed/0q6v1fjo7g-w6w7a0huch.gz
