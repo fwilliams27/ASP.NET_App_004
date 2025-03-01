@@ -5,6 +5,26 @@
 @inject JsonFileProductService ProductService
 @inject IJSRuntime Js
 
+<style>
+    .fa-star {
+        color: #ccc; /* Default star color (gray) */
+        cursor: pointer;
+        font-size: 16px;
+    }
+    .fa-star.checked {
+        color: #f8ce0b; /* Gold color for checked stars */
+    }
+    .rating {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        margin-top: 10px;
+    }
+    .modal-footer .rating {
+        margin-right: 10px;
+    }
+</style>
+
 <div class="card-container">
     @foreach (var product in ProductService.GetProducts())
     {
@@ -23,12 +43,40 @@
                         More Info
                     </button>
                 </small>
+                <!-- Star rating display for each product -->
+                <div class="rating mt-2">
+                    @{
+                        int productRating = CalculateProductRating(product);
+                        int productVoteCount = product.Ratings?.Length ?? 0;
+                        string productVoteLabel = productVoteCount == 1 ? "Vote" : "Votes";
+                    }
+                    @if (productVoteCount == 0)
+                    {
+                        <span>Be the first to vote!</span>
+                    }
+                    else
+                    {
+                        <span>@productVoteCount @productVoteLabel</span>
+                    }
+                    @for (int i = 0; i < 6; i++)
+                    {
+                        var currentStar = i;
+                        if (i < productRating)
+                        {
+                            <span class="fa fa-star checked"></span>
+                        }
+                        else
+                        {
+                            <span class="fa fa-star"></span>
+                        }
+                    }
+                </div>
             </div>
         </div>
     }
 </div>
 
-<!-- ✅ Always Keep the Modal in the DOM -->
+<!-- Modal for detailed product view -->
 <div class="modal fade" id="productModal" tabindex="-1" role="dialog" aria-labelledby="productTitle" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
@@ -48,6 +96,29 @@
                 }
             </div>
             <div class="modal-footer">
+                <div class="rating">
+                    @if (voteCount == 0)
+                    {
+                        <span>Be the first to vote!</span>
+                    }
+                    else
+                    {
+                        <span>@voteCount @voteLabel</span>
+                    }
+
+                    @for (int i = 0; i < 6; i++)
+                    {
+                        var currentStar = i;
+                        if (i < currentRating)
+                        {
+                            <span class="fa fa-star checked" @onclick="() => SubmitRating(currentStar + 1)"></span>
+                        }
+                        else
+                        {
+                            <span class="fa fa-star" @onclick="() => SubmitRating(currentStar + 1)"></span>
+                        }
+                    }
+                </div>
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" @onclick="CloseModal">Close</button>
             </div>
         </div>
@@ -57,12 +128,23 @@
 @code {
     private Product? selectedProduct;
     private string selectedProductId = string.Empty;
+    private int currentRating = 0;
+    private int voteCount = 0;
+    private string voteLabel = string.Empty;
+
+    private int CalculateProductRating(Product product)
+    {
+        if (product?.Ratings == null || product.Ratings.Length == 0)
+        {
+            return 0;
+        }
+        return (int)Math.Round(product.Ratings.Average());
+    }
 
     private async Task SelectProduct(string productId)
     {
         Console.WriteLine($"Selecting product: {productId}");
 
-        // Find the selected product
         selectedProductId = productId;
         selectedProduct = ProductService.GetProducts().FirstOrDefault(x => x.Id == productId);
 
@@ -70,8 +152,8 @@
         {
             Console.WriteLine($"Product found: {selectedProduct.Title}");
             Console.WriteLine($"Image URL: {selectedProduct.Image}");
+            GetCurrentRating();
 
-            // Show the modal using Bootstrap's JavaScript via interop
             await Js.InvokeVoidAsync("showBootstrapModal", "#productModal");
         }
         else
@@ -80,14 +162,45 @@
         }
     }
 
+    private void GetCurrentRating()
+    {
+        if (selectedProduct?.Ratings == null || selectedProduct.Ratings.Length == 0)
+        {
+            currentRating = 0;
+            voteCount = 0;
+            voteLabel = "Votes";
+        }
+        else
+        {
+            // Gets the first rating for the selected product
+            currentRating = selectedProduct.Ratings.First(); 
+            voteCount = currentRating; // Use the rating value as the vote count
+            voteLabel = voteCount == 1 ? "Vote" : "Votes";
+        }
+    }
+
+    private void SubmitRating(int rating)
+    {
+        if (selectedProduct == null) return;
+
+        // Overwrite the rating with the selected number of stars
+        selectedProduct.Ratings = new int[] { rating };
+
+        // Recalculate rating and vote count
+        GetCurrentRating();
+
+        Console.WriteLine($"New rating set: {rating}");
+
+        // Update the product in the JSON file
+        ProductService.UpdateProduct(selectedProduct);
+    }
+
     private async Task CloseModal()
     {
         selectedProduct = null;
-        // Hide the modal using Bootstrap's JavaScript via interop
         await Js.InvokeVoidAsync("hideBootstrapModal", "#productModal");
     }
 
-    // Ensure JavaScript functions are available
     protected override async Task OnAfterRenderAsync(bool firstRender)
     {
         if (firstRender)

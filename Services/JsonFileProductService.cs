@@ -33,14 +33,14 @@ public class JsonFileProductService
 
     public void AddRating(string productId, int rating)
     {
-        var products = GetProducts().ToList(); // Convert to list to allow modifications
-        var query = products.FirstOrDefault(x => x.Id == productId); // Match instructor's variable name
+        var products = GetProducts().ToList();
+        var query = products.FirstOrDefault(x => x.Id == productId);
 
-        if (query != null) // Ensure product exists
+        if (query != null)
         {
             if (query.Ratings == null)
             {
-                query.Ratings = new int[] { rating }; // Initialize Ratings array
+                query.Ratings = new int[] { rating };
             }
             else
             {
@@ -49,7 +49,31 @@ public class JsonFileProductService
                 query.Ratings = ratings.ToArray();
             }
 
-            // Serialize the updated products back to the file
+            using (var outputStream = File.OpenWrite(JsonFileName))
+            {
+                JsonSerializer.Serialize<IEnumerable<Product>>(
+                    new Utf8JsonWriter(outputStream, new JsonWriterOptions
+                    {
+                        SkipValidation = true,
+                        Indented = true
+                    }),
+                    products
+                );
+            }
+        }
+    }
+
+    // Added UpdateProduct method to persist changes to a product
+    public void UpdateProduct(Product updatedProduct)
+    {
+        var products = GetProducts().ToList();
+        var existingProduct = products.FirstOrDefault(p => p.Id == updatedProduct.Id);
+
+        if (existingProduct != null)
+        {
+            var index = products.IndexOf(existingProduct);
+            products[index] = updatedProduct;
+
             using (var outputStream = File.OpenWrite(JsonFileName))
             {
                 JsonSerializer.Serialize<IEnumerable<Product>>(
