@@ -1,5 +1,5 @@
 .checked {
-  color: orange;
+  color: #00FF00; /* Green instead of orange to match Matrix theme */
 }
 
 .fa-star {
@@ -13,124 +13,125 @@ for details on configuring this project to bundle and minify static web assets. 
 }
 
 .card-columns .card-body {
-    height: 100px;
-    font-family: 'Nunito', sans-serif;
-    background: #fbfafd;
+  height: 100px;
+  font-family: 'Courier New', Courier, monospace; /* Monospace font */
+  background: #111111; /* Dark gray background */
+  color: #00FF00; /* Green text */
 }
 
 .card-columns .card-img {
   height: 330px;
   vertical-align: bottom;
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover; /* Resize the background image to cover the entire container */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   opacity: .8;
-}
-
-.modal .card-img {
-  height: 500px;
-  vertical-align: bottom;
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover; /* Resize the background image to cover the entire container */
+  border: 2px solid #00FF00; /* Green border */
 }
 
 .card-columns .card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 10px 20px rgba(37,33,82,.12), 0 4px 8px rgba(37,33,82,.06);
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 255, 0, 0.12), 0 4px 8px rgba(0, 255, 0, 0.06); /* Green-tinted shadow */
 }
 
-
-a.navbar-brand {
-    white-space: normal;
-    font-family: 'Yellowtail', cursive;
-    font-size: xx-large;
-    text-align: center;
-    word-break: break-all;
-}
-
-/* Provide sufficient contrast against white background */
+/* Provide sufficient contrast against black background */
 a {
-   color: #0366d6;
+  color: #00FF00; /* Green text */
+}
+
+a:hover {
+  color: #0F0; /* Darker green on hover */
 }
 
 .btn-primary {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
+  color: #000000; /* Black text for contrast */
+  background-color: #00FF00; /* Green background */
+  border-color: #0F0; /* Slightly darker green border */
+}
+
+.btn-primary:hover {
+  background-color: #0F0;
+  border-color: #00FF00;
 }
 
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
+  color: #000000; /* Black text for contrast */
+  background-color: #00FF00; /* Green background */
+  border-color: #0F0; /* Slightly darker green border */
 }
 
-/* Sticky footer styles
--------------------------------------------------- */
+/* Sticky footer styles */
 html {
   font-size: 14px;
+  position: relative;
+  min-height: 100%;
 }
+
 @media (min-width: 768px) {
   html {
-    font-size: 16px;
+      font-size: 16px;
   }
 }
 
 .border-top {
-  border-top: 1px solid #e5e5e5;
+  border-top: 1px solid #00FF00; /* Green border */
 }
+
 .border-bottom {
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 1px solid #00FF00; /* Green border */
 }
 
 .box-shadow {
-  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+  box-shadow: 0 .25rem .75rem rgba(0, 255, 0, 0.05); /* Green-tinted shadow */
 }
 
 button.accept-policy {
   font-size: 1rem;
   line-height: inherit;
+  color: #000000; /* Black text for contrast */
+  background-color: #00FF00; /* Green background */
+  border: 1px solid #0F0; /* Green border */
 }
 
-/* Sticky footer styles
--------------------------------------------------- */
-html {
-  position: relative;
-  min-height: 100%;
+button.accept-policy:hover {
+  background-color: #0F0; /* Darker green on hover */
 }
 
+/* Update body margin for footer */
 body {
   /* Margin bottom by footer height */
   margin-bottom: 60px;
+  background-color: #000000 !important; /* Ensure black background */
 }
+
 p {
-    font-family: 'Nunito', sans-serif;
+  font-family: 'Courier New', Courier, monospace; /* Monospace font */
 }
+
 h1 {
-    font-family: 'Nunito', sans-serif;
+  font-family: 'Courier New', Courier, monospace; /* Monospace font */
 }
+
 ul {
-    font-family: 'Nunito', sans-serif;
+  font-family: 'Courier New', Courier, monospace; /* Monospace font */
 }
+
 .footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    white-space: nowrap;
-    line-height: 60px; /* Vertically center the text there */
-    font-family: 'Nunito', sans-serif;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px; /* Vertically center the text there */
+  font-family: 'Courier New', Courier, monospace; /* Monospace font */
+  background: #111111; /* Dark gray background (overrides bg-footer) */
+  color: #00FF00; /* Green text */
 }
-/*Backgrounds*/
+
+/* Backgrounds */
 .bg-navbar {
-    background: -webkit-linear-gradient(110deg, #e9a8a6 60%, #252152 60%);
-    background: -o-linear-gradient(110deg, #e9a8a6 60%, #252152 60%);
-    background: -moz-linear-gradient(110deg, #e9a8a6 60%, #252152 60%);
-    background: linear-gradient(110deg, #e9a8a6 60%, #252152 60%);
+  background: #111111; /* Solid dark gray instead of gradient */
 }
+
 .bg-footer {
-    background: -webkit-linear-gradient(110deg, #252152 60%, #e9a8a6 60%);
-    background: -o-linear-gradient(110deg, #252152 60%, #e9a8a6 60%);
-    background: -moz-linear-gradient(110deg, #252152 60%, #e9a8a6 60%);
-    background: linear-gradient(110deg, #252152 60%, #e9a8a6 60%);
+  background: #111111; /* Solid dark gray instead of gradient */
 }

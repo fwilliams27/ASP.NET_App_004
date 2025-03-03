@@ -20,71 +20,111 @@ public class JsonFileProductService
 
     public IEnumerable<Product> GetProducts()
     {
-        if (!File.Exists(JsonFileName))
+        try
         {
+            if (!File.Exists(JsonFileName))
+            {
+                Console.WriteLine($"Products file not found at: {JsonFileName}");
+                return Array.Empty<Product>();
+            }
+
+            using var jsonFileReader = File.OpenText(JsonFileName);
+            var jsonContent = jsonFileReader.ReadToEnd();
+            if (string.IsNullOrEmpty(jsonContent))
+            {
+                Console.WriteLine($"Products file is empty: {JsonFileName}");
+                return Array.Empty<Product>();
+            }
+
+            var products = JsonSerializer.Deserialize<Product[]>(jsonContent,
+                new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
+            Console.WriteLine($"Successfully deserialized {products?.Length ?? 0} products from {JsonFileName}");
+            return products ?? Array.Empty<Product>();
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error reading products.json: {ex.Message}\n{ex.StackTrace}");
             return Array.Empty<Product>();
         }
-
-        using var jsonFileReader = File.OpenText(JsonFileName);
-        return JsonSerializer.Deserialize<Product[]>(jsonFileReader.ReadToEnd(),
-               new JsonSerializerOptions { PropertyNameCaseInsensitive = true })
-               ?? Array.Empty<Product>();
     }
 
     public void AddRating(string productId, int rating)
     {
-        var products = GetProducts().ToList();
-        var query = products.FirstOrDefault(x => x.Id == productId);
-
-        if (query != null)
+        try
         {
-            if (query.Ratings == null)
+            var products = GetProducts().ToList();
+            var query = products.FirstOrDefault(x => x.Id == productId);
+
+            if (query != null)
             {
-                query.Ratings = new int[] { rating };
+                if (query.Ratings == null)
+                {
+                    query.Ratings = new int[] { rating };
+                }
+                else
+                {
+                    var ratings = query.Ratings.ToList();
+                    ratings.Add(rating);
+                    query.Ratings = ratings.ToArray();
+                }
+
+                using (var outputStream = File.OpenWrite(JsonFileName))
+                {
+                    JsonSerializer.Serialize<IEnumerable<Product>>(
+                        new Utf8JsonWriter(outputStream, new JsonWriterOptions
+                        {
+                            SkipValidation = true,
+                            Indented = true
+                        }),
+                        products
+                    );
+                }
+                Console.WriteLine($"Successfully added rating {rating} to product {productId}");
             }
             else
             {
-                var ratings = query.Ratings.ToList();
-                ratings.Add(rating);
-                query.Ratings = ratings.ToArray();
+                Console.WriteLine($"Product with ID {productId} not found for rating update.");
             }
-
-            using (var outputStream = File.OpenWrite(JsonFileName))
-            {
-                JsonSerializer.Serialize<IEnumerable<Product>>(
-                    new Utf8JsonWriter(outputStream, new JsonWriterOptions
-                    {
-                        SkipValidation = true,
-                        Indented = true
-                    }),
-                    products
-                );
-            }
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error adding rating to product {productId}: {ex.Message}\n{ex.StackTrace}");
         }
     }
 
-    // Added UpdateProduct method to persist changes to a product
     public void UpdateProduct(Product updatedProduct)
     {
-        var products = GetProducts().ToList();
-        var existingProduct = products.FirstOrDefault(p => p.Id == updatedProduct.Id);
-
-        if (existingProduct != null)
+        try
         {
-            var index = products.IndexOf(existingProduct);
-            products[index] = updatedProduct;
+            var products = GetProducts().ToList();
+            var existingProduct = products.FirstOrDefault(p => p.Id == updatedProduct.Id);
 
-            using (var outputStream = File.OpenWrite(JsonFileName))
+            if (existingProduct != null)
             {
-                JsonSerializer.Serialize<IEnumerable<Product>>(
-                    new Utf8JsonWriter(outputStream, new JsonWriterOptions
-                    {
-                        SkipValidation = true,
-                        Indented = true
-                    }),
-                    products
-                );
+                var index = products.IndexOf(existingProduct);
+                products[index] = updatedProduct;
+
+                using (var outputStream = File.OpenWrite(JsonFileName))
+                {
+                    JsonSerializer.Serialize<IEnumerable<Product>>(
+                        new Utf8JsonWriter(outputStream, new JsonWriterOptions
+                        {
+                            SkipValidation = true,
+                            Indented = true
+                        }),
+                        products
+                    );
+                }
+                Console.WriteLine($"Successfully updated product {updatedProduct.Id}");
             }
+            else
+            {
+                Console.WriteLine($"Product with ID {updatedProduct.Id} not found for update.");
+            }
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error updating product {updatedProduct?.Id}: {ex.Message}\n{ex.StackTrace}");
         }
     }
 }

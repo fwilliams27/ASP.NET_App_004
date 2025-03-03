@@ -1,10 +1,6 @@
 {
   "Files": [
     {
-      "Id": "/Users/fredwilliams/ASP.NET_App_004/obj/Debug/net9.0/scopedcss/projectbundle/ASP.NET_App_004.bundle.scp.css",
-      "PackagePath": "staticwebassets/ASP.NET_App_004.69kh2lugfr.bundle.scp.css"
-    },
-    {
       "Id": "/Users/fredwilliams/ASP.NET_App_004/wwwroot/css/site.css",
       "PackagePath": "staticwebassets/css/site.css"
     },
@@ -15,6 +11,10 @@
     {
       "Id": "/Users/fredwilliams/ASP.NET_App_004/wwwroot/js/site.js",
       "PackagePath": "staticwebassets/js/site.js"
+    },
+    {
+      "Id": "/Users/fredwilliams/ASP.NET_App_004/wwwroot/layout.css",
+      "PackagePath": "staticwebassets/layout.css"
     },
     {
       "Id": "/Users/fredwilliams/ASP.NET_App_004/wwwroot/lib/bootstrap/LICENSE",

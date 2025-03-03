@@ -1,66 +1,99 @@
-@model IEnumerable<ASP.NET_App_004.Models.Product>
+@page
 
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Products</title>
-    <style>
-        .card-container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            justify-content: center;
-        }
+@{
+    ViewData["Title"] = "Products";
+}
 
-        .card {
-            border: 1px solid #ccc;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            width: 300px;
-            padding: 15px;
-            text-align: center;
-            background-color: #fff;
-        }
+<h1>Matrix Weapons & Technology</h1>
 
-        .card img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 5px;
-        }
+<div id="products" class="products">
+    <!-- Product cards will be rendered here by site.js -->
+</div>
 
-        .card h2 {
-            font-size: 1.5rem;
-            margin: 10px 0;
-        }
-
-        .card p {
-            font-size: 1rem;
-            color: #333;
-        }
-
-        .card a {
-            color: #007BFF;
-            text-decoration: none;
-        }
-
-        .card a:hover {
-            text-decoration: underline;
-        }
-    </style>
-</head>
-<body>
-    <h1 class="text-center">Products</h1>
-    <div class="card-container">
-        @foreach (var product in Model)
-        {
-            <div class="card">
-                <img src="@product.Image" alt="@product.Title">
-                <h2>@product.Title</h2>
-                <p>@product.Description</p>
-                <p><strong>Maker:</strong> @product.Maker</p>
-                <a href="@product.Url">Learn more</a>
-            </div>
-        }
+<!-- Static Modal -->
+<div id="productModal" class="modal" role="dialog" aria-labelledby="modalTitle" aria-hidden="true">
+    <div class="modal-content">
+        <span class="close" aria-label="Close Modal">×</span>
+        <h2 id="modalTitle"></h2>
+        <img id="modalImage" src="" alt="" class="modal-image">
+        <p id="modalDescription"></p>
+        <div class="ratings" id="modalRatings"></div>
+        <button id="voteButton">Be the first to vote!</button>
+        <a id="modalLink" href="" target="_blank" rel="noopener noreferrer">Learn More</a>
     </div>
-</body>
-</html>
+</div>
+
+<style>
+    /* Inline styles to ensure modal visibility */
+    #productModal {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.8);
+        z-index: 1000;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #productModal .modal-content {
+        background: #111111;
+        border: 2px solid #00FF66;
+        padding: 20px;
+        max-width: 500px;
+        width: 90%;
+        border-radius: 5px;
+        position: relative;
+        color: #66FF99;
+    }
+
+    #productModal .modal-image {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        margin-bottom: 15px;
+        border: 2px solid #00FF66;
+    }
+
+    #productModal h2,
+    #productModal p,
+    #productModal a {
+        background: #333333;
+        padding: 10px;
+        border: 1px solid #00FF66;
+        border-radius: 5px;
+        display: inline-block;
+        text-shadow: 1px 1px 2px #000000;
+        color: #66FF99;
+    }
+
+    #productModal .ratings {
+        margin: 10px 0;
+    }
+
+    #productModal .ratings::before {
+        content: "★★★★★";
+        color: #555;
+    }
+
+    #productModal .ratings.has-ratings::before {
+        content: "★★★★★";
+        color: #66FF99;
+    }
+
+    #productModal .close {
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        font-size: 1.5em;
+        cursor: pointer;
+        color: #66FF99;
+        text-shadow: 1px 1px 2px #000000;
+    }
+
+    #productModal .close:hover {
+        color: #99FFCC;
+    }
+</style>

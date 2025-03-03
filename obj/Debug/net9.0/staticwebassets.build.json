@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "nFi6T3rPOod/1SvzPbbsks/f4hEkSHIknsmHZ0wfUQA=",
+  "Hash": "fxPexreZb16magp9VaurCQ0a0PHNPssnm/lpPfeH48I=",
   "Source": "ASP.NET_App_004",
   "BasePath": "_content/ASP.NET_App_004",
   "Mode": "Default",
@@ -38,12 +38,12 @@
       "OriginalItemSpec": "/Users/fredwilliams/ASP.NET_App_004/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css"
     },
     {
-      "Identity": "/Users/fredwilliams/ASP.NET_App_004/obj/Debug/net9.0/compressed/0q6v1fjo7g-txrlt792sk.gz",
+      "Identity": "/Users/fredwilliams/ASP.NET_App_004/obj/Debug/net9.0/compressed/0q6v1fjo7g-mic0kw6hzg.gz",
       "SourceId": "ASP.NET_App_004",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/fredwilliams/ASP.NET_App_004/obj/Debug/net9.0/compressed/",
       "BasePath": "_content/ASP.NET_App_004",
-      "RelativePath": "products#[.{fingerprint=txrlt792sk}]?.json.gz",
+      "RelativePath": "products#[.{fingerprint=mic0kw6hzg}]?.json.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -52,11 +52,32 @@
       "RelatedAsset": "/Users/fredwilliams/ASP.NET_App_004/wwwroot/products.json",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "lrq7zvkrxj",
-      "Integrity": "v53Ed5WMWUX6sGccf3KgN5yEWIkNJNq87AeMjWtsy9Y=",
+      "Fingerprint": "hpirjgjp2l",
+      "Integrity": "i8XicX4saG+RSnpXa7NTUdvFi8KWhlhtEKDrGovu4c8=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/Users/fredwilliams/ASP.NET_App_004/wwwroot/products.json"
+    },
+    {
+      "Identity": "/Users/fredwilliams/ASP.NET_App_004/obj/Debug/net9.0/compressed/0rmx00fk0x-wz4bzs6l61.gz",
+      "SourceId": "ASP.NET_App_004",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/fredwilliams/ASP.NET_App_004/obj/Debug/net9.0/compressed/",
+      "BasePath": "_content/ASP.NET_App_004",
+      "RelativePath": "layout#[.{fingerprint=wz4bzs6l61}]?.css.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "/Users/fredwilliams/ASP.NET_App_004/wwwroot/layout.css",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "g6r6hv874f",
+      "Integrity": "GJyuJBN5Bn0YnWoGAgEkltpJpp6S3Np2BgLKOD5kVSE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/Users/fredwilliams/ASP.NET_App_004/wwwroot/layout.css"
     },
     {
       "Identity": "/Users/fredwilliams/ASP.NET_App_004/obj/Debug/net9.0/compressed/0tsfv91jvb-h1s4sie4z3.gz",
@@ -288,27 +309,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/Users/fredwilliams/ASP.NET_App_004/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js"
-    },
-    {
-      "Identity": "/Users/fredwilliams/ASP.NET_App_004/obj/Debug/net9.0/compressed/4vaaoryz2i-69kh2lugfr.gz",
-      "SourceId": "ASP.NET_App_004",
-      "SourceType": "Computed",
-      "ContentRoot": "/Users/fredwilliams/ASP.NET_App_004/obj/Debug/net9.0/compressed/",
-      "BasePath": "_content/ASP.NET_App_004",
-      "RelativePath": "ASP.NET_App_004#[.{fingerprint=69kh2lugfr}]?.styles.css.gz",
-      "AssetKind": "All",
-      "AssetMode": "CurrentProject",
-      "AssetRole": "Alternative",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "/Users/fredwilliams/ASP.NET_App_004/obj/Debug/net9.0/scopedcss/bundle/ASP.NET_App_004.styles.css",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "Fingerprint": "euoqpeb38t",
-      "Integrity": "RiFFEk5R/ghRr50/p2Jw6VJFzKFt/ZrRpAIglhrY1SQ=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/Users/fredwilliams/ASP.NET_App_004/obj/Debug/net9.0/scopedcss/bundle/ASP.NET_App_004.styles.css"
     },
     {
       "Identity": "/Users/fredwilliams/ASP.NET_App_004/obj/Debug/net9.0/compressed/4xbaazhqpi-c2oey78nd0.gz",
@@ -773,27 +773,6 @@
       "OriginalItemSpec": "/Users/fredwilliams/ASP.NET_App_004/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Identity": "/Users/fredwilliams/ASP.NET_App_004/obj/Debug/net9.0/compressed/gj5l4rpn52-69kh2lugfr.gz",
-      "SourceId": "ASP.NET_App_004",
-      "SourceType": "Computed",
-      "ContentRoot": "/Users/fredwilliams/ASP.NET_App_004/obj/Debug/net9.0/compressed/",
-      "BasePath": "_content/ASP.NET_App_004",
-      "RelativePath": "ASP.NET_App_004#[.{fingerprint=69kh2lugfr}]!.bundle.scp.css.gz",
-      "AssetKind": "All",
-      "AssetMode": "Reference",
-      "AssetRole": "Alternative",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "/Users/fredwilliams/ASP.NET_App_004/obj/Debug/net9.0/scopedcss/projectbundle/ASP.NET_App_004.bundle.scp.css",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "Fingerprint": "euoqpeb38t",
-      "Integrity": "RiFFEk5R/ghRr50/p2Jw6VJFzKFt/ZrRpAIglhrY1SQ=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/Users/fredwilliams/ASP.NET_App_004/obj/Debug/net9.0/scopedcss/projectbundle/ASP.NET_App_004.bundle.scp.css"
-    },
-    {
       "Identity": "/Users/fredwilliams/ASP.NET_App_004/obj/Debug/net9.0/compressed/gnasuoj0q9-y7v9cxd14o.gz",
       "SourceId": "ASP.NET_App_004",
       "SourceType": "Discovered",
@@ -836,12 +815,12 @@
       "OriginalItemSpec": "/Users/fredwilliams/ASP.NET_App_004/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css"
     },
     {
-      "Identity": "/Users/fredwilliams/ASP.NET_App_004/obj/Debug/net9.0/compressed/ho22wa2e4y-njfhh264tf.gz",
+      "Identity": "/Users/fredwilliams/ASP.NET_App_004/obj/Debug/net9.0/compressed/ho22wa2e4y-tu9uy6uqpc.gz",
       "SourceId": "ASP.NET_App_004",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/fredwilliams/ASP.NET_App_004/obj/Debug/net9.0/compressed/",
       "BasePath": "_content/ASP.NET_App_004",
-      "RelativePath": "css/site#[.{fingerprint=njfhh264tf}]?.css.gz",
+      "RelativePath": "css/site#[.{fingerprint=tu9uy6uqpc}]?.css.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -850,8 +829,8 @@
       "RelatedAsset": "/Users/fredwilliams/ASP.NET_App_004/wwwroot/css/site.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "by50fq8laq",
-      "Integrity": "3Qr1fxk1Uz2bB0qanK1m1CcxKtnrHImY+XiMfVtyKx8=",
+      "Fingerprint": "fysp6pusba",
+      "Integrity": "1wgMXZfm7egoFNYlynZrZFSK28gRdj8A5o35GMR8YDo=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/Users/fredwilliams/ASP.NET_App_004/wwwroot/css/site.css"
@@ -941,12 +920,12 @@
       "OriginalItemSpec": "/Users/fredwilliams/ASP.NET_App_004/wwwroot/lib/jquery/dist/jquery.js"
     },
     {
-      "Identity": "/Users/fredwilliams/ASP.NET_App_004/obj/Debug/net9.0/compressed/kw7xqq67lg-9b8t2rx7aa.gz",
+      "Identity": "/Users/fredwilliams/ASP.NET_App_004/obj/Debug/net9.0/compressed/kw7xqq67lg-e6048lbd5o.gz",
       "SourceId": "ASP.NET_App_004",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/fredwilliams/ASP.NET_App_004/obj/Debug/net9.0/compressed/",
       "BasePath": "_content/ASP.NET_App_004",
-      "RelativePath": "js/site#[.{fingerprint=9b8t2rx7aa}]?.js.gz",
+      "RelativePath": "js/site#[.{fingerprint=e6048lbd5o}]?.js.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -955,8 +934,8 @@
       "RelatedAsset": "/Users/fredwilliams/ASP.NET_App_004/wwwroot/js/site.js",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "x0bf0w326o",
-      "Integrity": "kRV/nfbSs7IwENo4QC7HhoBZUN/CrenoMLK5Q0a0YJQ=",
+      "Fingerprint": "z229i5ghid",
+      "Integrity": "NcetTuXbIDzb/33zgFj8oY1/s/hJ+oWuTZewxMmTTjc=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/Users/fredwilliams/ASP.NET_App_004/wwwroot/js/site.js"
@@ -1382,48 +1361,6 @@
       "OriginalItemSpec": "/Users/fredwilliams/ASP.NET_App_004/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js"
     },
     {
-      "Identity": "/Users/fredwilliams/ASP.NET_App_004/obj/Debug/net9.0/scopedcss/bundle/ASP.NET_App_004.styles.css",
-      "SourceId": "ASP.NET_App_004",
-      "SourceType": "Computed",
-      "ContentRoot": "/Users/fredwilliams/ASP.NET_App_004/obj/Debug/net9.0/scopedcss/bundle/",
-      "BasePath": "_content/ASP.NET_App_004",
-      "RelativePath": "ASP.NET_App_004#[.{fingerprint}]?.styles.css",
-      "AssetKind": "All",
-      "AssetMode": "CurrentProject",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "ScopedCss",
-      "AssetTraitValue": "ApplicationBundle",
-      "Fingerprint": "69kh2lugfr",
-      "Integrity": "Numd/P9sLGCM+6ry81ygi31Mk+/IBI9qappDxiI0Kj0=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/Users/fredwilliams/ASP.NET_App_004/obj/Debug/net9.0/scopedcss/bundle/ASP.NET_App_004.styles.css"
-    },
-    {
-      "Identity": "/Users/fredwilliams/ASP.NET_App_004/obj/Debug/net9.0/scopedcss/projectbundle/ASP.NET_App_004.bundle.scp.css",
-      "SourceId": "ASP.NET_App_004",
-      "SourceType": "Computed",
-      "ContentRoot": "/Users/fredwilliams/ASP.NET_App_004/obj/Debug/net9.0/scopedcss/projectbundle/",
-      "BasePath": "_content/ASP.NET_App_004",
-      "RelativePath": "ASP.NET_App_004#[.{fingerprint}]!.bundle.scp.css",
-      "AssetKind": "All",
-      "AssetMode": "Reference",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "ScopedCss",
-      "AssetTraitValue": "ProjectBundle",
-      "Fingerprint": "69kh2lugfr",
-      "Integrity": "Numd/P9sLGCM+6ry81ygi31Mk+/IBI9qappDxiI0Kj0=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/Users/fredwilliams/ASP.NET_App_004/obj/Debug/net9.0/scopedcss/projectbundle/ASP.NET_App_004.bundle.scp.css"
-    },
-    {
       "Identity": "/Users/fredwilliams/ASP.NET_App_004/wwwroot/css/site.css",
       "SourceId": "ASP.NET_App_004",
       "SourceType": "Discovered",
@@ -1438,8 +1375,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "njfhh264tf",
-      "Integrity": "88GRCBkY+U8L9Im1Gwf12GEvVn7wv9cY1F3V5Zu9V38=",
+      "Fingerprint": "tu9uy6uqpc",
+      "Integrity": "m9izIiefwVmEI7/S9lFOM+DRU5zzIYe0Zt9b/7OjHW0=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/css/site.css"
@@ -1480,11 +1417,32 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "9b8t2rx7aa",
-      "Integrity": "VS0uM0cPaYwAkYjaenSsALZ6fSh4OY8l2xp76/fILnA=",
+      "Fingerprint": "e6048lbd5o",
+      "Integrity": "Grp8pa/RTxbtBX98BnBRle3TbTfsqyheZWqQqOXUCxU=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/js/site.js"
+    },
+    {
+      "Identity": "/Users/fredwilliams/ASP.NET_App_004/wwwroot/layout.css",
+      "SourceId": "ASP.NET_App_004",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/fredwilliams/ASP.NET_App_004/wwwroot/",
+      "BasePath": "_content/ASP.NET_App_004",
+      "RelativePath": "layout#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "wz4bzs6l61",
+      "Integrity": "DIGSCOylu+pPhf0OxSGNoDpxa0OJvPRzDsIS4YyMu/8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/layout.css"
     },
     {
       "Identity": "/Users/fredwilliams/ASP.NET_App_004/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css",
@@ -2761,8 +2719,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "txrlt792sk",
-      "Integrity": "sUlx1zZMiAV6tPLVipv5ek5ofEY8vechzG+UHXKrqqs=",
+      "Fingerprint": "mic0kw6hzg",
+      "Integrity": "XvMUc2zT+vBDsfaIjwSVheaDeS2v1TAMXYfeX6Rqd78=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/products.json"
@@ -2770,609 +2728,13 @@
   ],
   "Endpoints": [
     {
-      "Route": "ASP.NET_App_004.69kh2lugfr.bundle.scp.css",
-      "AssetFile": "/Users/fredwilliams/ASP.NET_App_004/obj/Debug/net9.0/compressed/gj5l4rpn52-69kh2lugfr.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.001834862385"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "544"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"RiFFEk5R/ghRr50/p2Jw6VJFzKFt/ZrRpAIglhrY1SQ=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 28 Feb 2025 23:36:27 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"Numd/P9sLGCM+6ry81ygi31Mk+/IBI9qappDxiI0Kj0=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "69kh2lugfr"
-        },
-        {
-          "Name": "label",
-          "Value": "ASP.NET_App_004.bundle.scp.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-Numd/P9sLGCM+6ry81ygi31Mk+/IBI9qappDxiI0Kj0="
-        }
-      ]
-    },
-    {
-      "Route": "ASP.NET_App_004.69kh2lugfr.bundle.scp.css",
-      "AssetFile": "/Users/fredwilliams/ASP.NET_App_004/obj/Debug/net9.0/scopedcss/projectbundle/ASP.NET_App_004.bundle.scp.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1084"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"Numd/P9sLGCM+6ry81ygi31Mk+/IBI9qappDxiI0Kj0=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 28 Feb 2025 23:36:27 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "69kh2lugfr"
-        },
-        {
-          "Name": "label",
-          "Value": "ASP.NET_App_004.bundle.scp.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-Numd/P9sLGCM+6ry81ygi31Mk+/IBI9qappDxiI0Kj0="
-        }
-      ]
-    },
-    {
-      "Route": "ASP.NET_App_004.69kh2lugfr.bundle.scp.css.gz",
-      "AssetFile": "/Users/fredwilliams/ASP.NET_App_004/obj/Debug/net9.0/compressed/gj5l4rpn52-69kh2lugfr.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "544"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"RiFFEk5R/ghRr50/p2Jw6VJFzKFt/ZrRpAIglhrY1SQ=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 28 Feb 2025 23:36:27 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "69kh2lugfr"
-        },
-        {
-          "Name": "label",
-          "Value": "ASP.NET_App_004.bundle.scp.css.gz"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-RiFFEk5R/ghRr50/p2Jw6VJFzKFt/ZrRpAIglhrY1SQ="
-        }
-      ]
-    },
-    {
-      "Route": "ASP.NET_App_004.69kh2lugfr.styles.css",
-      "AssetFile": "/Users/fredwilliams/ASP.NET_App_004/obj/Debug/net9.0/compressed/4vaaoryz2i-69kh2lugfr.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.001834862385"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "544"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"RiFFEk5R/ghRr50/p2Jw6VJFzKFt/ZrRpAIglhrY1SQ=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 28 Feb 2025 23:36:27 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"Numd/P9sLGCM+6ry81ygi31Mk+/IBI9qappDxiI0Kj0=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "69kh2lugfr"
-        },
-        {
-          "Name": "label",
-          "Value": "ASP.NET_App_004.styles.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-Numd/P9sLGCM+6ry81ygi31Mk+/IBI9qappDxiI0Kj0="
-        }
-      ]
-    },
-    {
-      "Route": "ASP.NET_App_004.69kh2lugfr.styles.css",
-      "AssetFile": "/Users/fredwilliams/ASP.NET_App_004/obj/Debug/net9.0/scopedcss/bundle/ASP.NET_App_004.styles.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1084"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"Numd/P9sLGCM+6ry81ygi31Mk+/IBI9qappDxiI0Kj0=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 28 Feb 2025 23:36:27 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "69kh2lugfr"
-        },
-        {
-          "Name": "label",
-          "Value": "ASP.NET_App_004.styles.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-Numd/P9sLGCM+6ry81ygi31Mk+/IBI9qappDxiI0Kj0="
-        }
-      ]
-    },
-    {
-      "Route": "ASP.NET_App_004.69kh2lugfr.styles.css.gz",
-      "AssetFile": "/Users/fredwilliams/ASP.NET_App_004/obj/Debug/net9.0/compressed/4vaaoryz2i-69kh2lugfr.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "544"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"RiFFEk5R/ghRr50/p2Jw6VJFzKFt/ZrRpAIglhrY1SQ=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 28 Feb 2025 23:36:27 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "69kh2lugfr"
-        },
-        {
-          "Name": "label",
-          "Value": "ASP.NET_App_004.styles.css.gz"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-RiFFEk5R/ghRr50/p2Jw6VJFzKFt/ZrRpAIglhrY1SQ="
-        }
-      ]
-    },
-    {
-      "Route": "ASP.NET_App_004.bundle.scp.css",
-      "AssetFile": "/Users/fredwilliams/ASP.NET_App_004/obj/Debug/net9.0/compressed/gj5l4rpn52-69kh2lugfr.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.001834862385"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "544"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"RiFFEk5R/ghRr50/p2Jw6VJFzKFt/ZrRpAIglhrY1SQ=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 28 Feb 2025 23:36:27 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"Numd/P9sLGCM+6ry81ygi31Mk+/IBI9qappDxiI0Kj0=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-Numd/P9sLGCM+6ry81ygi31Mk+/IBI9qappDxiI0Kj0="
-        }
-      ]
-    },
-    {
-      "Route": "ASP.NET_App_004.bundle.scp.css",
-      "AssetFile": "/Users/fredwilliams/ASP.NET_App_004/obj/Debug/net9.0/scopedcss/projectbundle/ASP.NET_App_004.bundle.scp.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1084"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"Numd/P9sLGCM+6ry81ygi31Mk+/IBI9qappDxiI0Kj0=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 28 Feb 2025 23:36:27 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-Numd/P9sLGCM+6ry81ygi31Mk+/IBI9qappDxiI0Kj0="
-        }
-      ]
-    },
-    {
-      "Route": "ASP.NET_App_004.bundle.scp.css.gz",
-      "AssetFile": "/Users/fredwilliams/ASP.NET_App_004/obj/Debug/net9.0/compressed/gj5l4rpn52-69kh2lugfr.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "544"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"RiFFEk5R/ghRr50/p2Jw6VJFzKFt/ZrRpAIglhrY1SQ=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 28 Feb 2025 23:36:27 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-RiFFEk5R/ghRr50/p2Jw6VJFzKFt/ZrRpAIglhrY1SQ="
-        }
-      ]
-    },
-    {
-      "Route": "ASP.NET_App_004.styles.css",
-      "AssetFile": "/Users/fredwilliams/ASP.NET_App_004/obj/Debug/net9.0/compressed/4vaaoryz2i-69kh2lugfr.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.001834862385"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "544"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"RiFFEk5R/ghRr50/p2Jw6VJFzKFt/ZrRpAIglhrY1SQ=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 28 Feb 2025 23:36:27 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"Numd/P9sLGCM+6ry81ygi31Mk+/IBI9qappDxiI0Kj0=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-Numd/P9sLGCM+6ry81ygi31Mk+/IBI9qappDxiI0Kj0="
-        }
-      ]
-    },
-    {
-      "Route": "ASP.NET_App_004.styles.css",
-      "AssetFile": "/Users/fredwilliams/ASP.NET_App_004/obj/Debug/net9.0/scopedcss/bundle/ASP.NET_App_004.styles.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1084"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"Numd/P9sLGCM+6ry81ygi31Mk+/IBI9qappDxiI0Kj0=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 28 Feb 2025 23:36:27 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-Numd/P9sLGCM+6ry81ygi31Mk+/IBI9qappDxiI0Kj0="
-        }
-      ]
-    },
-    {
-      "Route": "ASP.NET_App_004.styles.css.gz",
-      "AssetFile": "/Users/fredwilliams/ASP.NET_App_004/obj/Debug/net9.0/compressed/4vaaoryz2i-69kh2lugfr.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "544"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"RiFFEk5R/ghRr50/p2Jw6VJFzKFt/ZrRpAIglhrY1SQ=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 28 Feb 2025 23:36:27 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-RiFFEk5R/ghRr50/p2Jw6VJFzKFt/ZrRpAIglhrY1SQ="
-        }
-      ]
-    },
-    {
       "Route": "css/site.css",
-      "AssetFile": "/Users/fredwilliams/ASP.NET_App_004/obj/Debug/net9.0/compressed/ho22wa2e4y-njfhh264tf.gz",
+      "AssetFile": "/Users/fredwilliams/ASP.NET_App_004/obj/Debug/net9.0/compressed/ho22wa2e4y-tu9uy6uqpc.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000935453695"
+          "Quality": "0.000943396226"
         }
       ],
       "ResponseHeaders": [
@@ -3382,15 +2744,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1068"
+          "Value": "1059"
         },
         {
           "Name": "ETag",
-          "Value": "\"3Qr1fxk1Uz2bB0qanK1m1CcxKtnrHImY+XiMfVtyKx8=\""
+          "Value": "\"1wgMXZfm7egoFNYlynZrZFSK28gRdj8A5o35GMR8YDo=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 27 Jan 2025 18:44:24 GMT"
+          "Value": "Mon, 03 Mar 2025 20:50:15 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3410,13 +2772,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"88GRCBkY+U8L9Im1Gwf12GEvVn7wv9cY1F3V5Zu9V38=\""
+          "Value": "W/\"m9izIiefwVmEI7/S9lFOM+DRU5zzIYe0Zt9b/7OjHW0=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-88GRCBkY+U8L9Im1Gwf12GEvVn7wv9cY1F3V5Zu9V38="
+          "Value": "sha256-m9izIiefwVmEI7/S9lFOM+DRU5zzIYe0Zt9b/7OjHW0="
         }
       ]
     },
@@ -3431,7 +2793,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3282"
+          "Value": "3339"
         },
         {
           "Name": "Content-Type",
@@ -3439,11 +2801,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"88GRCBkY+U8L9Im1Gwf12GEvVn7wv9cY1F3V5Zu9V38=\""
+          "Value": "\"m9izIiefwVmEI7/S9lFOM+DRU5zzIYe0Zt9b/7OjHW0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 27 Jan 2025 18:44:24 GMT"
+          "Value": "Mon, 03 Mar 2025 20:50:15 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3453,13 +2815,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-88GRCBkY+U8L9Im1Gwf12GEvVn7wv9cY1F3V5Zu9V38="
+          "Value": "sha256-m9izIiefwVmEI7/S9lFOM+DRU5zzIYe0Zt9b/7OjHW0="
         }
       ]
     },
     {
       "Route": "css/site.css.gz",
-      "AssetFile": "/Users/fredwilliams/ASP.NET_App_004/obj/Debug/net9.0/compressed/ho22wa2e4y-njfhh264tf.gz",
+      "AssetFile": "/Users/fredwilliams/ASP.NET_App_004/obj/Debug/net9.0/compressed/ho22wa2e4y-tu9uy6uqpc.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3468,7 +2830,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1068"
+          "Value": "1059"
         },
         {
           "Name": "Content-Type",
@@ -3476,11 +2838,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"3Qr1fxk1Uz2bB0qanK1m1CcxKtnrHImY+XiMfVtyKx8=\""
+          "Value": "\"1wgMXZfm7egoFNYlynZrZFSK28gRdj8A5o35GMR8YDo=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 27 Jan 2025 18:44:24 GMT"
+          "Value": "Mon, 03 Mar 2025 20:50:15 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3498,18 +2860,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-3Qr1fxk1Uz2bB0qanK1m1CcxKtnrHImY+XiMfVtyKx8="
+          "Value": "sha256-1wgMXZfm7egoFNYlynZrZFSK28gRdj8A5o35GMR8YDo="
         }
       ]
     },
     {
-      "Route": "css/site.njfhh264tf.css",
-      "AssetFile": "/Users/fredwilliams/ASP.NET_App_004/obj/Debug/net9.0/compressed/ho22wa2e4y-njfhh264tf.gz",
+      "Route": "css/site.tu9uy6uqpc.css",
+      "AssetFile": "/Users/fredwilliams/ASP.NET_App_004/obj/Debug/net9.0/compressed/ho22wa2e4y-tu9uy6uqpc.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000935453695"
+          "Quality": "0.000943396226"
         }
       ],
       "ResponseHeaders": [
@@ -3519,15 +2881,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1068"
+          "Value": "1059"
         },
         {
           "Name": "ETag",
-          "Value": "\"3Qr1fxk1Uz2bB0qanK1m1CcxKtnrHImY+XiMfVtyKx8=\""
+          "Value": "\"1wgMXZfm7egoFNYlynZrZFSK28gRdj8A5o35GMR8YDo=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 27 Jan 2025 18:44:24 GMT"
+          "Value": "Mon, 03 Mar 2025 20:50:15 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3547,13 +2909,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"88GRCBkY+U8L9Im1Gwf12GEvVn7wv9cY1F3V5Zu9V38=\""
+          "Value": "W/\"m9izIiefwVmEI7/S9lFOM+DRU5zzIYe0Zt9b/7OjHW0=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "njfhh264tf"
+          "Value": "tu9uy6uqpc"
         },
         {
           "Name": "label",
@@ -3561,12 +2923,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-88GRCBkY+U8L9Im1Gwf12GEvVn7wv9cY1F3V5Zu9V38="
+          "Value": "sha256-m9izIiefwVmEI7/S9lFOM+DRU5zzIYe0Zt9b/7OjHW0="
         }
       ]
     },
     {
-      "Route": "css/site.njfhh264tf.css",
+      "Route": "css/site.tu9uy6uqpc.css",
       "AssetFile": "/Users/fredwilliams/ASP.NET_App_004/wwwroot/css/site.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -3576,7 +2938,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3282"
+          "Value": "3339"
         },
         {
           "Name": "Content-Type",
@@ -3584,11 +2946,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"88GRCBkY+U8L9Im1Gwf12GEvVn7wv9cY1F3V5Zu9V38=\""
+          "Value": "\"m9izIiefwVmEI7/S9lFOM+DRU5zzIYe0Zt9b/7OjHW0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 27 Jan 2025 18:44:24 GMT"
+          "Value": "Mon, 03 Mar 2025 20:50:15 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3598,7 +2960,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "njfhh264tf"
+          "Value": "tu9uy6uqpc"
         },
         {
           "Name": "label",
@@ -3606,13 +2968,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-88GRCBkY+U8L9Im1Gwf12GEvVn7wv9cY1F3V5Zu9V38="
+          "Value": "sha256-m9izIiefwVmEI7/S9lFOM+DRU5zzIYe0Zt9b/7OjHW0="
         }
       ]
     },
     {
-      "Route": "css/site.njfhh264tf.css.gz",
-      "AssetFile": "/Users/fredwilliams/ASP.NET_App_004/obj/Debug/net9.0/compressed/ho22wa2e4y-njfhh264tf.gz",
+      "Route": "css/site.tu9uy6uqpc.css.gz",
+      "AssetFile": "/Users/fredwilliams/ASP.NET_App_004/obj/Debug/net9.0/compressed/ho22wa2e4y-tu9uy6uqpc.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3621,7 +2983,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1068"
+          "Value": "1059"
         },
         {
           "Name": "Content-Type",
@@ -3629,11 +2991,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"3Qr1fxk1Uz2bB0qanK1m1CcxKtnrHImY+XiMfVtyKx8=\""
+          "Value": "\"1wgMXZfm7egoFNYlynZrZFSK28gRdj8A5o35GMR8YDo=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 27 Jan 2025 18:44:24 GMT"
+          "Value": "Mon, 03 Mar 2025 20:50:15 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3651,7 +3013,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "njfhh264tf"
+          "Value": "tu9uy6uqpc"
         },
         {
           "Name": "label",
@@ -3659,7 +3021,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-3Qr1fxk1Uz2bB0qanK1m1CcxKtnrHImY+XiMfVtyKx8="
+          "Value": "sha256-1wgMXZfm7egoFNYlynZrZFSK28gRdj8A5o35GMR8YDo="
         }
       ]
     },
@@ -3962,13 +3324,13 @@
       ]
     },
     {
-      "Route": "js/site.9b8t2rx7aa.js",
-      "AssetFile": "/Users/fredwilliams/ASP.NET_App_004/obj/Debug/net9.0/compressed/kw7xqq67lg-9b8t2rx7aa.gz",
+      "Route": "js/site.e6048lbd5o.js",
+      "AssetFile": "/Users/fredwilliams/ASP.NET_App_004/obj/Debug/net9.0/compressed/kw7xqq67lg-e6048lbd5o.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.001587301587"
+          "Quality": "0.000796812749"
         }
       ],
       "ResponseHeaders": [
@@ -3978,15 +3340,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "629"
+          "Value": "1254"
         },
         {
           "Name": "ETag",
-          "Value": "\"kRV/nfbSs7IwENo4QC7HhoBZUN/CrenoMLK5Q0a0YJQ=\""
+          "Value": "\"NcetTuXbIDzb/33zgFj8oY1/s/hJ+oWuTZewxMmTTjc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 23 Feb 2025 21:28:01 GMT"
+          "Value": "Mon, 03 Mar 2025 22:39:26 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4006,13 +3368,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"VS0uM0cPaYwAkYjaenSsALZ6fSh4OY8l2xp76/fILnA=\""
+          "Value": "W/\"Grp8pa/RTxbtBX98BnBRle3TbTfsqyheZWqQqOXUCxU=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "9b8t2rx7aa"
+          "Value": "e6048lbd5o"
         },
         {
           "Name": "label",
@@ -4020,12 +3382,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-VS0uM0cPaYwAkYjaenSsALZ6fSh4OY8l2xp76/fILnA="
+          "Value": "sha256-Grp8pa/RTxbtBX98BnBRle3TbTfsqyheZWqQqOXUCxU="
         }
       ]
     },
     {
-      "Route": "js/site.9b8t2rx7aa.js",
+      "Route": "js/site.e6048lbd5o.js",
       "AssetFile": "/Users/fredwilliams/ASP.NET_App_004/wwwroot/js/site.js",
       "Selectors": [],
       "ResponseHeaders": [
@@ -4035,7 +3397,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1739"
+          "Value": "3430"
         },
         {
           "Name": "Content-Type",
@@ -4043,11 +3405,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"VS0uM0cPaYwAkYjaenSsALZ6fSh4OY8l2xp76/fILnA=\""
+          "Value": "\"Grp8pa/RTxbtBX98BnBRle3TbTfsqyheZWqQqOXUCxU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 23 Feb 2025 21:28:01 GMT"
+          "Value": "Mon, 03 Mar 2025 22:39:26 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4057,7 +3419,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "9b8t2rx7aa"
+          "Value": "e6048lbd5o"
         },
         {
           "Name": "label",
@@ -4065,13 +3427,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-VS0uM0cPaYwAkYjaenSsALZ6fSh4OY8l2xp76/fILnA="
+          "Value": "sha256-Grp8pa/RTxbtBX98BnBRle3TbTfsqyheZWqQqOXUCxU="
         }
       ]
     },
     {
-      "Route": "js/site.9b8t2rx7aa.js.gz",
-      "AssetFile": "/Users/fredwilliams/ASP.NET_App_004/obj/Debug/net9.0/compressed/kw7xqq67lg-9b8t2rx7aa.gz",
+      "Route": "js/site.e6048lbd5o.js.gz",
+      "AssetFile": "/Users/fredwilliams/ASP.NET_App_004/obj/Debug/net9.0/compressed/kw7xqq67lg-e6048lbd5o.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4080,7 +3442,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "629"
+          "Value": "1254"
         },
         {
           "Name": "Content-Type",
@@ -4088,11 +3450,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"kRV/nfbSs7IwENo4QC7HhoBZUN/CrenoMLK5Q0a0YJQ=\""
+          "Value": "\"NcetTuXbIDzb/33zgFj8oY1/s/hJ+oWuTZewxMmTTjc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 23 Feb 2025 21:28:01 GMT"
+          "Value": "Mon, 03 Mar 2025 22:39:26 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4110,7 +3472,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "9b8t2rx7aa"
+          "Value": "e6048lbd5o"
         },
         {
           "Name": "label",
@@ -4118,18 +3480,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-kRV/nfbSs7IwENo4QC7HhoBZUN/CrenoMLK5Q0a0YJQ="
+          "Value": "sha256-NcetTuXbIDzb/33zgFj8oY1/s/hJ+oWuTZewxMmTTjc="
         }
       ]
     },
     {
       "Route": "js/site.js",
-      "AssetFile": "/Users/fredwilliams/ASP.NET_App_004/obj/Debug/net9.0/compressed/kw7xqq67lg-9b8t2rx7aa.gz",
+      "AssetFile": "/Users/fredwilliams/ASP.NET_App_004/obj/Debug/net9.0/compressed/kw7xqq67lg-e6048lbd5o.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.001587301587"
+          "Quality": "0.000796812749"
         }
       ],
       "ResponseHeaders": [
@@ -4139,15 +3501,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "629"
+          "Value": "1254"
         },
         {
           "Name": "ETag",
-          "Value": "\"kRV/nfbSs7IwENo4QC7HhoBZUN/CrenoMLK5Q0a0YJQ=\""
+          "Value": "\"NcetTuXbIDzb/33zgFj8oY1/s/hJ+oWuTZewxMmTTjc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 23 Feb 2025 21:28:01 GMT"
+          "Value": "Mon, 03 Mar 2025 22:39:26 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4167,13 +3529,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"VS0uM0cPaYwAkYjaenSsALZ6fSh4OY8l2xp76/fILnA=\""
+          "Value": "W/\"Grp8pa/RTxbtBX98BnBRle3TbTfsqyheZWqQqOXUCxU=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-VS0uM0cPaYwAkYjaenSsALZ6fSh4OY8l2xp76/fILnA="
+          "Value": "sha256-Grp8pa/RTxbtBX98BnBRle3TbTfsqyheZWqQqOXUCxU="
         }
       ]
     },
@@ -4188,7 +3550,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1739"
+          "Value": "3430"
         },
         {
           "Name": "Content-Type",
@@ -4196,11 +3558,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"VS0uM0cPaYwAkYjaenSsALZ6fSh4OY8l2xp76/fILnA=\""
+          "Value": "\"Grp8pa/RTxbtBX98BnBRle3TbTfsqyheZWqQqOXUCxU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 23 Feb 2025 21:28:01 GMT"
+          "Value": "Mon, 03 Mar 2025 22:39:26 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4210,13 +3572,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-VS0uM0cPaYwAkYjaenSsALZ6fSh4OY8l2xp76/fILnA="
+          "Value": "sha256-Grp8pa/RTxbtBX98BnBRle3TbTfsqyheZWqQqOXUCxU="
         }
       ]
     },
     {
       "Route": "js/site.js.gz",
-      "AssetFile": "/Users/fredwilliams/ASP.NET_App_004/obj/Debug/net9.0/compressed/kw7xqq67lg-9b8t2rx7aa.gz",
+      "AssetFile": "/Users/fredwilliams/ASP.NET_App_004/obj/Debug/net9.0/compressed/kw7xqq67lg-e6048lbd5o.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4225,7 +3587,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "629"
+          "Value": "1254"
         },
         {
           "Name": "Content-Type",
@@ -4233,11 +3595,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"kRV/nfbSs7IwENo4QC7HhoBZUN/CrenoMLK5Q0a0YJQ=\""
+          "Value": "\"NcetTuXbIDzb/33zgFj8oY1/s/hJ+oWuTZewxMmTTjc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 23 Feb 2025 21:28:01 GMT"
+          "Value": "Mon, 03 Mar 2025 22:39:26 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4255,7 +3617,305 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-kRV/nfbSs7IwENo4QC7HhoBZUN/CrenoMLK5Q0a0YJQ="
+          "Value": "sha256-NcetTuXbIDzb/33zgFj8oY1/s/hJ+oWuTZewxMmTTjc="
+        }
+      ]
+    },
+    {
+      "Route": "layout.css",
+      "AssetFile": "/Users/fredwilliams/ASP.NET_App_004/obj/Debug/net9.0/compressed/0rmx00fk0x-wz4bzs6l61.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000693000693"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1442"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GJyuJBN5Bn0YnWoGAgEkltpJpp6S3Np2BgLKOD5kVSE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 03 Mar 2025 22:59:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"DIGSCOylu+pPhf0OxSGNoDpxa0OJvPRzDsIS4YyMu/8=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-DIGSCOylu+pPhf0OxSGNoDpxa0OJvPRzDsIS4YyMu/8="
+        }
+      ]
+    },
+    {
+      "Route": "layout.css",
+      "AssetFile": "/Users/fredwilliams/ASP.NET_App_004/wwwroot/layout.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5174"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"DIGSCOylu+pPhf0OxSGNoDpxa0OJvPRzDsIS4YyMu/8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 03 Mar 2025 22:59:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-DIGSCOylu+pPhf0OxSGNoDpxa0OJvPRzDsIS4YyMu/8="
+        }
+      ]
+    },
+    {
+      "Route": "layout.css.gz",
+      "AssetFile": "/Users/fredwilliams/ASP.NET_App_004/obj/Debug/net9.0/compressed/0rmx00fk0x-wz4bzs6l61.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1442"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GJyuJBN5Bn0YnWoGAgEkltpJpp6S3Np2BgLKOD5kVSE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 03 Mar 2025 22:59:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-GJyuJBN5Bn0YnWoGAgEkltpJpp6S3Np2BgLKOD5kVSE="
+        }
+      ]
+    },
+    {
+      "Route": "layout.wz4bzs6l61.css",
+      "AssetFile": "/Users/fredwilliams/ASP.NET_App_004/obj/Debug/net9.0/compressed/0rmx00fk0x-wz4bzs6l61.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000693000693"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1442"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GJyuJBN5Bn0YnWoGAgEkltpJpp6S3Np2BgLKOD5kVSE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 03 Mar 2025 22:59:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"DIGSCOylu+pPhf0OxSGNoDpxa0OJvPRzDsIS4YyMu/8=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "wz4bzs6l61"
+        },
+        {
+          "Name": "label",
+          "Value": "layout.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-DIGSCOylu+pPhf0OxSGNoDpxa0OJvPRzDsIS4YyMu/8="
+        }
+      ]
+    },
+    {
+      "Route": "layout.wz4bzs6l61.css",
+      "AssetFile": "/Users/fredwilliams/ASP.NET_App_004/wwwroot/layout.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5174"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"DIGSCOylu+pPhf0OxSGNoDpxa0OJvPRzDsIS4YyMu/8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 03 Mar 2025 22:59:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "wz4bzs6l61"
+        },
+        {
+          "Name": "label",
+          "Value": "layout.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-DIGSCOylu+pPhf0OxSGNoDpxa0OJvPRzDsIS4YyMu/8="
+        }
+      ]
+    },
+    {
+      "Route": "layout.wz4bzs6l61.css.gz",
+      "AssetFile": "/Users/fredwilliams/ASP.NET_App_004/obj/Debug/net9.0/compressed/0rmx00fk0x-wz4bzs6l61.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1442"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GJyuJBN5Bn0YnWoGAgEkltpJpp6S3Np2BgLKOD5kVSE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 03 Mar 2025 22:59:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "wz4bzs6l61"
+        },
+        {
+          "Name": "label",
+          "Value": "layout.css.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-GJyuJBN5Bn0YnWoGAgEkltpJpp6S3Np2BgLKOD5kVSE="
         }
       ]
     },
@@ -21925,12 +21585,12 @@
     },
     {
       "Route": "products.json",
-      "AssetFile": "/Users/fredwilliams/ASP.NET_App_004/obj/Debug/net9.0/compressed/0q6v1fjo7g-txrlt792sk.gz",
+      "AssetFile": "/Users/fredwilliams/ASP.NET_App_004/obj/Debug/net9.0/compressed/0q6v1fjo7g-mic0kw6hzg.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000531067446"
+          "Quality": "0.000678886626"
         }
       ],
       "ResponseHeaders": [
@@ -21940,15 +21600,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1882"
+          "Value": "1472"
         },
         {
           "Name": "ETag",
-          "Value": "\"v53Ed5WMWUX6sGccf3KgN5yEWIkNJNq87AeMjWtsy9Y=\""
+          "Value": "\"i8XicX4saG+RSnpXa7NTUdvFi8KWhlhtEKDrGovu4c8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 28 Feb 2025 23:30:17 GMT"
+          "Value": "Mon, 03 Mar 2025 22:52:11 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -21968,13 +21628,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"sUlx1zZMiAV6tPLVipv5ek5ofEY8vechzG+UHXKrqqs=\""
+          "Value": "W/\"XvMUc2zT+vBDsfaIjwSVheaDeS2v1TAMXYfeX6Rqd78=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-sUlx1zZMiAV6tPLVipv5ek5ofEY8vechzG+UHXKrqqs="
+          "Value": "sha256-XvMUc2zT+vBDsfaIjwSVheaDeS2v1TAMXYfeX6Rqd78="
         }
       ]
     },
@@ -21989,7 +21649,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "6465"
+          "Value": "5078"
         },
         {
           "Name": "Content-Type",
@@ -21997,11 +21657,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"sUlx1zZMiAV6tPLVipv5ek5ofEY8vechzG+UHXKrqqs=\""
+          "Value": "\"XvMUc2zT+vBDsfaIjwSVheaDeS2v1TAMXYfeX6Rqd78=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 28 Feb 2025 23:30:17 GMT"
+          "Value": "Mon, 03 Mar 2025 22:52:11 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -22011,13 +21671,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-sUlx1zZMiAV6tPLVipv5ek5ofEY8vechzG+UHXKrqqs="
+          "Value": "sha256-XvMUc2zT+vBDsfaIjwSVheaDeS2v1TAMXYfeX6Rqd78="
         }
       ]
     },
     {
       "Route": "products.json.gz",
-      "AssetFile": "/Users/fredwilliams/ASP.NET_App_004/obj/Debug/net9.0/compressed/0q6v1fjo7g-txrlt792sk.gz",
+      "AssetFile": "/Users/fredwilliams/ASP.NET_App_004/obj/Debug/net9.0/compressed/0q6v1fjo7g-mic0kw6hzg.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -22026,7 +21686,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1882"
+          "Value": "1472"
         },
         {
           "Name": "Content-Type",
@@ -22034,11 +21694,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"v53Ed5WMWUX6sGccf3KgN5yEWIkNJNq87AeMjWtsy9Y=\""
+          "Value": "\"i8XicX4saG+RSnpXa7NTUdvFi8KWhlhtEKDrGovu4c8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 28 Feb 2025 23:30:17 GMT"
+          "Value": "Mon, 03 Mar 2025 22:52:11 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -22056,18 +21716,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-v53Ed5WMWUX6sGccf3KgN5yEWIkNJNq87AeMjWtsy9Y="
+          "Value": "sha256-i8XicX4saG+RSnpXa7NTUdvFi8KWhlhtEKDrGovu4c8="
         }
       ]
     },
     {
-      "Route": "products.txrlt792sk.json",
-      "AssetFile": "/Users/fredwilliams/ASP.NET_App_004/obj/Debug/net9.0/compressed/0q6v1fjo7g-txrlt792sk.gz",
+      "Route": "products.mic0kw6hzg.json",
+      "AssetFile": "/Users/fredwilliams/ASP.NET_App_004/obj/Debug/net9.0/compressed/0q6v1fjo7g-mic0kw6hzg.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000531067446"
+          "Quality": "0.000678886626"
         }
       ],
       "ResponseHeaders": [
@@ -22077,15 +21737,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1882"
+          "Value": "1472"
         },
         {
           "Name": "ETag",
-          "Value": "\"v53Ed5WMWUX6sGccf3KgN5yEWIkNJNq87AeMjWtsy9Y=\""
+          "Value": "\"i8XicX4saG+RSnpXa7NTUdvFi8KWhlhtEKDrGovu4c8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 28 Feb 2025 23:30:17 GMT"
+          "Value": "Mon, 03 Mar 2025 22:52:11 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -22105,13 +21765,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"sUlx1zZMiAV6tPLVipv5ek5ofEY8vechzG+UHXKrqqs=\""
+          "Value": "W/\"XvMUc2zT+vBDsfaIjwSVheaDeS2v1TAMXYfeX6Rqd78=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "txrlt792sk"
+          "Value": "mic0kw6hzg"
         },
         {
           "Name": "label",
@@ -22119,12 +21779,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-sUlx1zZMiAV6tPLVipv5ek5ofEY8vechzG+UHXKrqqs="
+          "Value": "sha256-XvMUc2zT+vBDsfaIjwSVheaDeS2v1TAMXYfeX6Rqd78="
         }
       ]
     },
     {
-      "Route": "products.txrlt792sk.json",
+      "Route": "products.mic0kw6hzg.json",
       "AssetFile": "/Users/fredwilliams/ASP.NET_App_004/wwwroot/products.json",
       "Selectors": [],
       "ResponseHeaders": [
@@ -22134,7 +21794,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "6465"
+          "Value": "5078"
         },
         {
           "Name": "Content-Type",
@@ -22142,11 +21802,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"sUlx1zZMiAV6tPLVipv5ek5ofEY8vechzG+UHXKrqqs=\""
+          "Value": "\"XvMUc2zT+vBDsfaIjwSVheaDeS2v1TAMXYfeX6Rqd78=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 28 Feb 2025 23:30:17 GMT"
+          "Value": "Mon, 03 Mar 2025 22:52:11 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -22156,7 +21816,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "txrlt792sk"
+          "Value": "mic0kw6hzg"
         },
         {
           "Name": "label",
@@ -22164,13 +21824,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-sUlx1zZMiAV6tPLVipv5ek5ofEY8vechzG+UHXKrqqs="
+          "Value": "sha256-XvMUc2zT+vBDsfaIjwSVheaDeS2v1TAMXYfeX6Rqd78="
         }
       ]
     },
     {
-      "Route": "products.txrlt792sk.json.gz",
-      "AssetFile": "/Users/fredwilliams/ASP.NET_App_004/obj/Debug/net9.0/compressed/0q6v1fjo7g-txrlt792sk.gz",
+      "Route": "products.mic0kw6hzg.json.gz",
+      "AssetFile": "/Users/fredwilliams/ASP.NET_App_004/obj/Debug/net9.0/compressed/0q6v1fjo7g-mic0kw6hzg.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -22179,7 +21839,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1882"
+          "Value": "1472"
         },
         {
           "Name": "Content-Type",
@@ -22187,11 +21847,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"v53Ed5WMWUX6sGccf3KgN5yEWIkNJNq87AeMjWtsy9Y=\""
+          "Value": "\"i8XicX4saG+RSnpXa7NTUdvFi8KWhlhtEKDrGovu4c8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 28 Feb 2025 23:30:17 GMT"
+          "Value": "Mon, 03 Mar 2025 22:52:11 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -22209,7 +21869,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "txrlt792sk"
+          "Value": "mic0kw6hzg"
         },
         {
           "Name": "label",
@@ -22217,7 +21877,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-v53Ed5WMWUX6sGccf3KgN5yEWIkNJNq87AeMjWtsy9Y="
+          "Value": "sha256-i8XicX4saG+RSnpXa7NTUdvFi8KWhlhtEKDrGovu4c8="
         }
       ]
     }

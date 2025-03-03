@@ -23,10 +23,22 @@
     .modal-footer .rating {
         margin-right: 10px;
     }
+    .modal-backdrop {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.8);
+        z-index: 1000;
+    }
+    .modal-dialog {
+        z-index: 1001; /* Ensure the modal content is above the backdrop */
+    }
 </style>
 
 <div class="card-container">
-    @foreach (var product in ProductService.GetProducts())
+    @foreach (var product in products)
     {
         <div class="card">
             <div class="card-img" style="background-image: url('@product.Image'); height: 200px; background-size: cover; background-position: center;">
@@ -77,60 +89,81 @@
 </div>
 
 <!-- Modal for detailed product view -->
-<div class="modal fade" id="productModal" tabindex="-1" role="dialog" aria-labelledby="productTitle" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="productTitle">@selectedProduct?.Title</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" @onclick="CloseModal"></button>
-            </div>
-            <div class="modal-body text-center">
-                @if (selectedProduct != null)
-                {
-                    <img src="@selectedProduct.Image" class="img-fluid" alt="@selectedProduct.Title">
-                    <p class="mt-3">@selectedProduct.Description</p>
-                }
-                else
-                {
-                    <p>No product selected.</p>
-                }
-            </div>
-            <div class="modal-footer">
-                <div class="rating">
-                    @if (voteCount == 0)
-                    {
-                        <span>Be the first to vote!</span>
-                    }
-                    else
-                    {
-                        <span>@voteCount @voteLabel</span>
-                    }
-
-                    @for (int i = 0; i < 6; i++)
-                    {
-                        var currentStar = i;
-                        if (i < currentRating)
+@if (showModal)
+{
+    <div class="modal-backdrop" @onclick="CloseModalIfOutside">
+        <div class="modal fade show" style="display: block;" id="productModal" tabindex="-1" role="dialog" aria-labelledby="productTitle" aria-hidden="false">
+            <div class="modal-dialog modal-dialog-centered" role="document" @onclick:stopPropagation="true">
+                <div class="modal-content" >
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="productTitle">@selectedProduct?.Title</h5>
+                        <button type="button" class="btn-close" @onclick="CloseModal"></button>
+                    </div>
+                    <div class="modal-body text-center">
+                        @if (selectedProduct != null)
                         {
-                            <span class="fa fa-star checked" @onclick="() => SubmitRating(currentStar + 1)"></span>
+                            <img src="@selectedProduct.Image" class="img-fluid" alt="@selectedProduct.Title">
+                            <p class="mt-3">@selectedProduct.Description</p>
                         }
                         else
                         {
-                            <span class="fa fa-star" @onclick="() => SubmitRating(currentStar + 1)"></span>
+                            <p>No product selected.</p>
                         }
-                    }
+                    </div>
+                    <div class="modal-footer">
+                        <div class="rating">
+                            @if (voteCount == 0)
+                            {
+                                <span>Be the first to vote!</span>
+                            }
+                            else
+                            {
+                                <span>@voteCount @voteLabel</span>
+                            }
+
+                            @for (int i = 0; i < 6; i++)
+                            {
+                                var currentStar = i;
+                                if (i < currentRating)
+                                {
+                                    <span class="fa fa-star checked" @onclick="() => SubmitRating(currentStar + 1)"></span>
+                                }
+                                else
+                                {
+                                    <span class="fa fa-star" @onclick="() => SubmitRating(currentStar + 1)"></span>
+                                }
+                            }
+                        </div>
+                        <button type="button" class="btn btn-secondary" @onclick="CloseModal">Close</button>
+                    </div>
                 </div>
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" @onclick="CloseModal">Close</button>
             </div>
         </div>
     </div>
-</div>
+}
 
 @code {
+    private IEnumerable<Product> products = new List<Product>();
     private Product? selectedProduct;
     private string selectedProductId = string.Empty;
     private int currentRating = 0;
     private int voteCount = 0;
     private string voteLabel = string.Empty;
+    private bool showModal = false;
+
+    protected override void OnInitialized()
+    {
+        try
+        {
+            products = ProductService.GetProducts();
+            Console.WriteLine($"Loaded {products.Count()} products in OnInitialized.");
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error loading products in OnInitialized: {ex.Message}\n{ex.StackTrace}");
+            products = new List<Product>();
+        }
+    }
 
     private int CalculateProductRating(Product product)
     {
@@ -141,24 +174,31 @@
         return (int)Math.Round(product.Ratings.Average());
     }
 
-    private async Task SelectProduct(string productId)
+    private void SelectProduct(string productId)
     {
-        Console.WriteLine($"Selecting product: {productId}");
-
-        selectedProductId = productId;
-        selectedProduct = ProductService.GetProducts().FirstOrDefault(x => x.Id == productId);
-
-        if (selectedProduct != null)
+        try
         {
-            Console.WriteLine($"Product found: {selectedProduct.Title}");
-            Console.WriteLine($"Image URL: {selectedProduct.Image}");
-            GetCurrentRating();
+            Console.WriteLine($"Selecting product: {productId}");
 
-            await Js.InvokeVoidAsync("showBootstrapModal", "#productModal");
+            selectedProductId = productId;
+            selectedProduct = ProductService.GetProducts().FirstOrDefault(x => x.Id == productId);
+
+            if (selectedProduct != null)
+            {
+                Console.WriteLine($"Product found: {selectedProduct.Title}");
+                Console.WriteLine($"Image URL: {selectedProduct.Image}");
+                GetCurrentRating();
+                showModal = true;
+                Console.WriteLine("Modal opened successfully.");
+            }
+            else
+            {
+                Console.WriteLine($"Product with ID {productId} not found!");
+            }
         }
-        else
+        catch (Exception ex)
         {
-            Console.Error.WriteLine("Product not found!");
+            Console.WriteLine($"Error selecting product {productId}: {ex.Message}\n{ex.StackTrace}");
         }
     }
 
@@ -172,40 +212,50 @@
         }
         else
         {
-            // Gets the first rating for the selected product
-            currentRating = selectedProduct.Ratings.First(); 
-            voteCount = currentRating; // Use the rating value as the vote count
+            currentRating = selectedProduct.Ratings.First();
+            voteCount = selectedProduct.Ratings.Length;
             voteLabel = voteCount == 1 ? "Vote" : "Votes";
         }
     }
 
     private void SubmitRating(int rating)
     {
-        if (selectedProduct == null) return;
-
-        // Overwrite the rating with the selected number of stars
-        selectedProduct.Ratings = new int[] { rating };
-
-        // Recalculate rating and vote count
-        GetCurrentRating();
-
-        Console.WriteLine($"New rating set: {rating}");
-
-        // Update the product in the JSON file
-        ProductService.UpdateProduct(selectedProduct);
-    }
-
-    private async Task CloseModal()
-    {
-        selectedProduct = null;
-        await Js.InvokeVoidAsync("hideBootstrapModal", "#productModal");
-    }
-
-    protected override async Task OnAfterRenderAsync(bool firstRender)
-    {
-        if (firstRender)
+        try
         {
-            await Js.InvokeVoidAsync("initializeBootstrapModals");
+            Console.WriteLine($"Submitting rating: {rating} for product: {selectedProduct?.Id}");
+            if (selectedProduct == null) return;
+
+            selectedProduct.Ratings = new int[] { rating };
+            GetCurrentRating();
+            Console.WriteLine($"New rating set: {rating}");
+            ProductService.UpdateProduct(selectedProduct);
+            StateHasChanged();
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error submitting rating for product {selectedProduct?.Id}: {ex.Message}\n{ex.StackTrace}");
+        }
+    }
+
+    private void CloseModalIfOutside()
+    {
+        // Only close the modal if the click is on the backdrop
+        CloseModal();
+    }
+
+    private void CloseModal()
+    {
+        try
+        {
+            Console.WriteLine("Closing modal...");
+            selectedProduct = null;
+            showModal = false;
+            Console.WriteLine("Modal closed successfully.");
+            StateHasChanged();
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error closing modal: {ex.Message}\n{ex.StackTrace}");
         }
     }
 }
