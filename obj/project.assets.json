@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/fredwilliams/ASP.NET_App_004/ASP.NET_App_004.csproj",
+      "projectUniqueName": "/Users/fredwilliams/ASP.NET_App_005/ASP.NET_App_004/ASP.NET_App_004.csproj",
       "projectName": "ASP.NET_App_004",
-      "projectPath": "/Users/fredwilliams/ASP.NET_App_004/ASP.NET_App_004.csproj",
+      "projectPath": "/Users/fredwilliams/ASP.NET_App_005/ASP.NET_App_004/ASP.NET_App_004.csproj",
       "packagesPath": "/Users/fredwilliams/.nuget/packages/",
-      "outputPath": "/Users/fredwilliams/ASP.NET_App_004/obj/",
+      "outputPath": "/Users/fredwilliams/ASP.NET_App_005/ASP.NET_App_004/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/fredwilliams/.nuget/NuGet/NuGet.Config"

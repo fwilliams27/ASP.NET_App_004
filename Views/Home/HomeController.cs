@@ -28,6 +28,12 @@ public class HomeController : Controller
         return View(products);
     }
 
+    [HttpGet("freedom")]
+    public IActionResult Freedom()
+    {
+        return View();
+    }
+
     [HttpGet("privacy")]
     public IActionResult Privacy()
     {

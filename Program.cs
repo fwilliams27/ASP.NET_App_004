@@ -1,47 +1,41 @@
 using ASP.NET_App_004.Services;
 using System.Text.Json;
-using ASP.NET_App_004.Components;   // Importing the Blazor component
+using ASP.NET_App_004.Components;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.AspNetCore.Components.Server.Circuits; // For CircuitHandler
-using Microsoft.AspNetCore.SignalR; // For HubFilter
+using Microsoft.AspNetCore.Components.Server.Circuits;
+using Microsoft.AspNetCore.SignalR;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
 builder.Services.AddControllersWithViews();
-builder.Services.AddTransient<JsonFileProductService>(); // Registering JsonFileProductService
-builder.Services.AddServerSideBlazor(); // Registering Blazor
-
-// Configure CircuitOptions for better error handling
+builder.Services.AddTransient<JsonFileProductService>();
 builder.Services.AddServerSideBlazor().AddCircuitOptions(options =>
 {
-    options.DisconnectedCircuitRetentionPeriod = TimeSpan.FromMinutes(5); // Retain circuit for 5 minutes after disconnection
-    options.DisconnectedCircuitMaxRetained = 100; // Maximum number of retained circuits
-    options.DetailedErrors = true; // Enable detailed errors for debugging
-    options.JSInteropDefaultCallTimeout = TimeSpan.FromMinutes(3); // Increase JS interop timeout to 3 minutes
+    options.DisconnectedCircuitRetentionPeriod = TimeSpan.FromMinutes(5);
+    options.DisconnectedCircuitMaxRetained = 100;
+    options.DetailedErrors = true;
+    options.JSInteropDefaultCallTimeout = TimeSpan.FromMinutes(3);
 });
 
-// Enable detailed logging
 builder.Services.AddLogging(logging =>
 {
     logging.AddConsole();
-    logging.SetMinimumLevel(LogLevel.Debug); // Set minimum log level to Debug for detailed logs
-    logging.AddFilter("Microsoft.AspNetCore.SignalR", LogLevel.Debug); // Ensure SignalR logs are captured
-    logging.AddFilter("Microsoft.AspNetCore.Http.Connections", LogLevel.Debug); // Ensure WebSocket logs are captured
-    logging.AddFilter("Microsoft.AspNetCore.Components", LogLevel.Debug); // Add logging for Blazor components
+    logging.SetMinimumLevel(LogLevel.Debug);
+    logging.AddFilter("Microsoft.AspNetCore.SignalR", LogLevel.Debug);
+    logging.AddFilter("Microsoft.AspNetCore.Http.Connections", LogLevel.Debug);
+    logging.AddFilter("Microsoft.AspNetCore.Components", LogLevel.Debug);
 });
 
-// Add a CircuitHandler to catch unhandled exceptions
 builder.Services.AddScoped<CircuitHandler>(sp => new CustomCircuitHandler());
 
-// Add a HubFilter to log WebSocket connection events
 builder.Services.AddSignalR().AddHubOptions<Microsoft.AspNetCore.SignalR.Hub>(options =>
 {
     options.AddFilter<CustomHubFilter>();
-    options.EnableDetailedErrors = true; // Enable detailed SignalR errors
+    options.EnableDetailedErrors = true;
 });
 
 var app = builder.Build();
@@ -56,20 +50,22 @@ if (!app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseRouting();
-app.UseWebSockets(); // Explicitly enable WebSocket support for Blazor Server
+app.UseWebSockets();
 app.UseAuthorization();
 
-// Map Blazor Hub first to prioritize Blazor routing
+// Map Blazor Hub to enable Blazor Server functionality
 app.MapBlazorHub();
 
-// Map Razor Pages and Controllers, excluding /Products to avoid conflict
+// Map fallback to _Host to load Blazor pages when no other route matches
+app.MapFallbackToPage("/_Host");
+
 app.MapRazorPages();
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}"
 );
 
-// Adding MapGet for "/products" endpoint with error handling
+// Optional API endpoint for products
 app.MapGet("/products", (HttpContext context, JsonFileProductService productService) =>
 {
     try
@@ -89,7 +85,6 @@ app.MapGet("/products", (HttpContext context, JsonFileProductService productServ
 
 app.Run();
 
-// Custom CircuitHandler to catch unhandled exceptions
 public class CustomCircuitHandler : CircuitHandler
 {
     public override async Task OnCircuitOpenedAsync(Circuit circuit, CancellationToken cancellationToken)
@@ -149,7 +144,6 @@ public class CustomCircuitHandler : CircuitHandler
     }
 }
 
-// Custom HubFilter to log WebSocket connection events
 public class CustomHubFilter : IHubFilter
 {
     public async ValueTask<object?> InvokeMethodAsync(HubInvocationContext invocationContext, Func<HubInvocationContext, ValueTask<object?>> next)

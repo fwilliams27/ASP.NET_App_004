@@ -7,12 +7,12 @@
 
 <style>
     .fa-star {
-        color: #ccc; /* Default star color (gray) */
+        color: #ccc;
         cursor: pointer;
         font-size: 16px;
     }
     .fa-star.checked {
-        color: #f8ce0b; /* Gold color for checked stars */
+        color: #f8ce0b;
     }
     .rating {
         display: flex;
@@ -33,7 +33,7 @@
         z-index: 1000;
     }
     .modal-dialog {
-        z-index: 1001; /* Ensure the modal content is above the backdrop */
+        z-index: 1001;
     }
 </style>
 
@@ -55,7 +55,6 @@
                         More Info
                     </button>
                 </small>
-                <!-- Star rating display for each product -->
                 <div class="rating mt-2">
                     @{
                         int productRating = CalculateProductRating(product);
@@ -72,7 +71,6 @@
                     }
                     @for (int i = 0; i < 6; i++)
                     {
-                        var currentStar = i;
                         if (i < productRating)
                         {
                             <span class="fa fa-star checked"></span>
@@ -88,13 +86,12 @@
     }
 </div>
 
-<!-- Modal for detailed product view -->
 @if (showModal)
 {
     <div class="modal-backdrop" @onclick="CloseModalIfOutside">
         <div class="modal fade show" style="display: block;" id="productModal" tabindex="-1" role="dialog" aria-labelledby="productTitle" aria-hidden="false">
             <div class="modal-dialog modal-dialog-centered" role="document" @onclick:stopPropagation="true">
-                <div class="modal-content" >
+                <div class="modal-content">
                     <div class="modal-header">
                         <h5 class="modal-title" id="productTitle">@selectedProduct?.Title</h5>
                         <button type="button" class="btn-close" @onclick="CloseModal"></button>
@@ -123,15 +120,14 @@
 
                             @for (int i = 0; i < 6; i++)
                             {
-                                var currentStar = i;
-                                if (i < currentRating)
-                                {
-                                    <span class="fa fa-star checked" @onclick="() => SubmitRating(currentStar + 1)"></span>
-                                }
-                                else
-                                {
-                                    <span class="fa fa-star" @onclick="() => SubmitRating(currentStar + 1)"></span>
-                                }
+                                int starValue = i + 1;
+                                bool isStarChecked = hoveredRating > 0 ? i < hoveredRating : i < currentRating;
+
+                                <span class="fa fa-star @(isStarChecked ? "checked" : "")"
+                                      @onmouseover="() => hoveredRating = starValue"
+                                      @onmouseout="() => hoveredRating = 0"
+                                      @onclick="() => SubmitRating(starValue)">
+                                </span>
                             }
                         </div>
                         <button type="button" class="btn btn-secondary" @onclick="CloseModal">Close</button>
@@ -150,6 +146,7 @@
     private int voteCount = 0;
     private string voteLabel = string.Empty;
     private bool showModal = false;
+    private int hoveredRating = 0;
 
     protected override void OnInitialized()
     {
@@ -212,9 +209,9 @@
         }
         else
         {
-            currentRating = selectedProduct.Ratings.First();
             voteCount = selectedProduct.Ratings.Length;
             voteLabel = voteCount == 1 ? "Vote" : "Votes";
+            currentRating = (int)Math.Round(selectedProduct.Ratings.Average());
         }
     }
 
@@ -225,10 +222,15 @@
             Console.WriteLine($"Submitting rating: {rating} for product: {selectedProduct?.Id}");
             if (selectedProduct == null) return;
 
-            selectedProduct.Ratings = new int[] { rating };
-            GetCurrentRating();
-            Console.WriteLine($"New rating set: {rating}");
+            var ratingsList = selectedProduct.Ratings?.ToList() ?? new List<int>();
+            ratingsList.Add(rating);
+            selectedProduct.Ratings = ratingsList.ToArray();
+
             ProductService.UpdateProduct(selectedProduct);
+            GetCurrentRating();
+            hoveredRating = 0;
+
+            Console.WriteLine($"New average rating: {currentRating} from {voteCount} votes.");
             StateHasChanged();
         }
         catch (Exception ex)
@@ -239,7 +241,6 @@
 
     private void CloseModalIfOutside()
     {
-        // Only close the modal if the click is on the backdrop
         CloseModal();
     }
 
